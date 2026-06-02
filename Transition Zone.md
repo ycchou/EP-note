@@ -3,6 +3,7 @@
 簡單來說，它指的是：QRS 波從「主要向下（負向波）」**扭轉變成**「主要向上（正向波）」**的那個**黃金交界導程。在臨床數學上，就是 R 波（向上）與 S 波（向下）的高度達到一比一（$R/S \approx 1$）、呈現最對稱雙相波的地方。
 
 你可以透過這張圖直觀地看出它的變化：
+
 <img width="288" height="338" alt="image" src="https://github.com/user-attachments/assets/c22b2737-a625-46bd-af5e-c91b360e4ddc" />
 
 
