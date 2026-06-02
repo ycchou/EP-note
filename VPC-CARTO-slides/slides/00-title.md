@@ -1,6 +1,14 @@
 <!-- .slide: class="title-slide" -->
 
-<img src="assets/carto3-logo.png" alt="CARTO 3 System" class="hero-logo no-shadow no-border" style="background:transparent;border:none;box-shadow:none;" />
+<div style="display:flex; justify-content:center; margin: 0.4em 0 0.6em;">
+  <span class="carto3-logo size-xl on-dark" aria-label="CARTO 3 System">
+    <span class="ct-row">
+      <span class="ct-word">CARTO<span class="ct-tm">™</span></span>
+      <span class="ct-three">3</span>
+    </span>
+    <span class="ct-system">System</span>
+  </span>
+</div>
 
 <div class="part-no">BIOSENSE WEBSTER · TRAINER EDITION</div>
 

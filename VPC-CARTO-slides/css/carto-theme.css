@@ -582,6 +582,81 @@ body.show-notes .brand-footer { display: none; }
   font-size: 0.85em;
 }
 
+/* ----------  CARTO 3 logo (pure HTML/CSS, transparent bg)  ---------- */
+.carto3-logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  font-family: 'Inter', 'Helvetica Neue', 'Arial Black', system-ui, sans-serif;
+  color: var(--carto-orange);
+  background: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  /* slight optical kerning */
+  font-feature-settings: "kern" 1, "calt" 1;
+}
+
+.carto3-logo .ct-row {
+  display: inline-block;
+  line-height: 0.95;
+  white-space: nowrap;
+}
+
+.carto3-logo .ct-word {
+  font-weight: 900;
+  font-size: 1em;
+  letter-spacing: -0.045em;
+  color: var(--carto-orange);
+  display: inline;
+}
+
+.carto3-logo .ct-tm {
+  font-weight: 700;
+  font-size: 0.22em;
+  vertical-align: super;
+  margin-left: 0.04em;
+  letter-spacing: 0;
+  color: var(--carto-orange);
+  position: relative;
+  top: -0.1em;
+}
+
+.carto3-logo .ct-three {
+  font-weight: 900;
+  font-size: 1em;
+  color: var(--carto-orange);
+  margin-left: 0.14em;
+  letter-spacing: -0.02em;
+}
+
+.carto3-logo .ct-system {
+  font-weight: 400;
+  font-size: 0.36em;
+  margin-top: 0.02em;
+  letter-spacing: 0.02em;
+  color: var(--carto-slate);
+  display: block;
+}
+
+/* Variant: light text on dark surface (for use on photo/dark slide) */
+.carto3-logo.on-dark .ct-system {
+  color: #B8C0D0;
+}
+
+/* Sizing helpers */
+.carto3-logo.size-xs { font-size: 22px; }
+.carto3-logo.size-sm { font-size: 36px; }
+.carto3-logo.size-md { font-size: 64px; }
+.carto3-logo.size-lg { font-size: 110px; }
+.carto3-logo.size-xl { font-size: 150px; }
+
+/* Footer-specific tweak so it sits inline */
+.brand-footer .carto3-logo {
+  font-size: 22px;
+}
+.brand-footer .carto3-logo .ct-row { line-height: 1; }
+
 /* Figure caption inside slides */
 .fig-cap {
   display: block;

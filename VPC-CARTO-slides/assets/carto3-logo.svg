@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" role="img" aria-label="CARTO 3 System">
+  <title>CARTO 3 System</title>
+  <defs>
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@900&family=Inter:wght@400&display=swap');
+      .ct-mark {
+        font-family: 'Mulish', 'Inter', 'Helvetica Neue', 'Arial Black', sans-serif;
+        font-weight: 900;
+        font-size: 128px;
+        fill: #F39200;
+        letter-spacing: -3px;
+      }
+      .ct-tm {
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        fill: #F39200;
+      }
+      .ct-sys {
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        fill: #3A4A5C;
+        letter-spacing: 1px;
+      }
+    ]]></style>
+  </defs>
+
+  <text x="0" y="124" class="ct-mark">CARTO</text>
+  <text x="424" y="56" class="ct-tm">™</text>
+  <text x="460" y="124" class="ct-mark">3</text>
+  <text x="2" y="194" class="ct-sys">System</text>
+</svg>
