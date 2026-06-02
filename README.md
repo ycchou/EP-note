@@ -1,37 +1,50 @@
-# 判讀 VPC 的起源（Origin）
+# 🫀 Electrophysiology (EP) Study Notes & Clinical Insights
 
-判讀 VPC 的起源（Origin）其實就像是在做「心電向量的定位遊戲」。不需要死記複雜的解剖位置，只要掌握**三個簡單的向量步驟**（分左右、判上下、定前後），你就能在幾秒鐘內直覺地抓出發電點。
-以下是臨床上最實用的判讀三部曲：
-## 第一步：分左右（左心室 vs. 右心室）— 看 V1
-首先看胸前導程的 **V1**。我們用傳導阻滯的形態（Morphology）來理解它：
- * **LBBB pattern（主要向下，QS 或 rS）：源自「右心室 (RV)」**
-   * *背後邏輯：* 當訊號從右心室發出，它會朝向左心室前進（遠離位於右胸的 V1 導程），所以 V1 會錄到向下的負向波。
- * **RBBB pattern（主要向上，單峰 R 或 rsR'）：源自「左心室 (LV)」**
-   * *背後邏輯：* 訊號從左心室發出，一路朝右前方奔跑（朝向 V1 導程），因此 V1 會呈現向上的正向波。
-## 第二步：判上下（流出道 vs. 心尖/下壁）— 看下壁導程 (II, III, aVF)
-接著看 **II、III、aVF**，這三個導程的眼睛長在心臟的下方：
- * **下壁導程全是正向波（Inferior Axis）：源自「上方流出道 (Outflow Tract)」**
-   * *背後邏輯：* 訊號從上面（流出道）發出，一路往下壁跑（朝向 II, III, aVF），所以這三個導程會畫出高大的正向 R 波。臨床上最常見的特發性（Idiopathic）VPC 多半源於此。
- * **下壁導程全是負向波（Superior Axis）：源自「下方心尖部或下壁 (Apical / Inferior wall)」**
-   * *背後邏輯：* 訊號從心臟底部往上逆行，遠離下壁導程，因此錄到負向波。
-## 第三步：精細定位（最常見的 RVOT vs. LVOT）
-如果前兩步判定是 **LBBB 形態 + 下壁導程向上**，代表它是最常見的**流出道 VPC**。這時我們要進一步區分是右室流出道（RVOT）還是左室流出道（LVOT）：
-### 1. 看胸前導程的「移行帶 (Transition Zone)」
-移行帶指的是 R 波波幅開始大於 S 波（R/S 大於 1）的導程：
- * **晚移行（Transition 在 V3 之後，如 V4、V5）：偏向 RVOT**
-   * 右心室位置靠前，訊號向後傳導時，胸前導程要到較後面（V4）才會轉為正向。
- * **早移行（Transition 在 V1、V2，或 V3 之前）：偏向 LVOT 或主動脈瓣竇 (Aortic Cusp)**
-   * 左心室位置靠後，訊號一發出就朝向前方奔跑，因此在 V1 或 V2 就會提早轉為正向。
-### 2. 看 Lead I 判斷「前後/左右側」
- * **Lead I 為正向：訊號源自「隔膜側 (Septum)」**（訊號由右向左傳）。
- * **Lead I 為負向/QS：訊號源自「游離壁 (Free Wall)」**（訊號由前外側向後內側傳）。
-## 快速總結複習表
-| 步驟 | 觀察導程 | 表現與對應起源 |
-|---|---|---|
-| **1. 左右** | **V1** | 向下 (LBBB) \rightarrow **右心室**
-向上 (RBBB) \rightarrow **左心室** |
-| **2. 上下** | **II, III, aVF** | 向上 (正) \rightarrow **上方（流出道）**
-向下 (負) \rightarrow **下方（心尖/下壁）** |
-| **3. 流出道細分** | **V1-V4 Transition** | V1-V2 提早轉正 \rightarrow **LVOT / Aortic Cusp**
-V4 延後轉正 \rightarrow **RVOT** |
-只要照著「V1 \rightarrow 下壁導程 \rightarrow 移行帶」這個順序走，拿著 12-lead EKG 就能非常直覺、有邏輯地跟學弟妹或同事解釋發電點的位置了。
+歡迎來到我的心臟電氣生理檢查 (EP Study) 學習與實務筆記庫。本專案致力於系統化整理心律不整的機制、導管消融術 (Catheter Ablation) 的臨床應用、立體定位圖資系統 (3D Mapping System) 的操作邏輯，以及臨床實務經驗。
+
+---
+
+## 📌 筆記核心架構 (Repository Structure)
+
+本知識庫依據 EP Study 的核心學習路徑進行分類，主要涵蓋以下四大模塊：
+
+### 1. 基礎心臟電氣生理學 (Fundamentals of EP)
+* **心臟解剖與傳導系統：** RA, LA, RV, LV, CS (Coronary Sinus) 的解剖相對位置。
+* **基礎電生理訊號：** AH Interval, HV Interval, Baseline ECG/EGM 判讀。
+* **常見刺激協議 (Pacing Protocols)：** Incremental Pacing, Extra-stimulus Pacing (S1-S2-S3), Refractory Period (ERP) 測定。
+
+### 2. 臨床心律不整機制 (Arrhythmia Mechanisms & Diagnostics)
+* **上心室頻脈 (SVT)：** AVNRT (雙路徑機制)、AVRT (旁道/WPW 症候群)、Atrial Flutter (典型與非典型迴路)。
+* **心室心律不整 (Ventricular Arrhythmias)：** PVC, VT 局部訊號特徵與定位法。
+* **心房顫動 (Atrial Fibrillation)：** PVI (肺靜脈隔離) 的消融策略與解剖要點。
+
+### 3. 3D 立體定位系統與導管技術 (3D Mapping & Catheterization)
+* **高密度 Mapping 邏輯：** LAT (Activation Mapping)、Voltage Mapping (疤痕組織判定)。
+* **導管操縱與訊號判讀：** 診斷導管 (Diagnostic Catheters) 的配置與消融導管 (Ablation Catheters) 的接觸力道 (Contact Force) 控制。
+
+### 4. 臨床案例分析與疑難排解 (Clinical Case Review)
+* **複雜 EGM 判讀：** 各類 Entrainment Pacing 的隱蔽性傳導與反應判定。
+* **術中 Troubleshooting：** 訊號雜訊排除、特殊解剖結構變異處理。
+
+---
+
+## 🛠️ 知識庫建置工具
+
+* **編輯語言：** Markdown (包含 LaTeX 數學公式與圖表標記)
+* **版本控制：** GitHub Git-flow
+* **排版架構：** 依疾病別與臨床流程建立獨立子目錄，方便快速檢索
+
+---
+
+## 📖 閱讀與檢索指引
+
+1.  **初學者推薦先讀：** `docs/01-Fundamentals/` 底下的基礎訊號判讀。
+2.  **臨床進階檢索：** 可直接透過 `docs/02-Arrhythmias/` 尋找特定心律不整的診斷流程圖 (Diagnostic Flowchart)。
+
+---
+
+## ✍️ 關於作者 (About Me)
+
+我是一位專注於心臟電氣生理 (EP) 領域的醫療專業人員。這個 Repository 是我將**臨床實務經驗**與**電生理學理**相結合的產物，旨在透過結構化的文字與思維導圖，將複雜的心臟訊號轉化為可複製的臨床直覺。
+
+> **Disclaimer (免責聲明):** > 本儲存庫內之所有筆記、圖表及案例分析僅供個人學術研究與臨床複習使用。所有內容皆已隱匿任何可識別之病人隱私資訊 (De-identified Data)，且不構成任何實際醫療診斷或處方建議。
