@@ -13,6 +13,9 @@ R/S \approx 1
 $$
 
 換句話說，就是 QRS 看起來最接近「上下對稱雙相波」的那一個胸前導程。
+你可以透過這一張圖直觀的看出變化
+<img width="288" height="338" alt="image" src="https://github.com/user-attachments/assets/9a492ad5-b096-43c5-ba1f-1c989f226eef" />
+
 
 ---
 
