@@ -13,6 +13,8 @@ Note:
 
 ## ⭐ 四個模組怎麼用？
 
+<img src="assets/diagrams/module-quadrant.svg" alt="4 CARTO modules quadrant overview" />
+
 | 模組 | 最適合使用時間 | 主要目的 |
 | --- | --- | --- |
 | <span class="pill pill-pm">Pattern Matching</span> | case 一開始、mapping 中、ablation 後 | 鎖定 target VPC，不要收錯 morphology |

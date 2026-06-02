@@ -37,7 +37,7 @@ case 一開始就開，整個 case 都不關。
 
 ## Pattern Matching 的目的
 
-<div class="callout">
+<div class="callout orange">
 <strong>Pattern Matching 是用 surface ECG morphology 來辨認「現在這一拍是不是我們要打的 clinical VPC」。</strong>
 </div>
 
@@ -50,6 +50,40 @@ case 一開始就開，整個 case 都不關。
 
 Note:
 這點很重要：Pattern Matching 不告訴你 origin 在哪，它只負責「篩拍子」。
+
+---
+
+## Pattern Matching Viewer · 實際畫面
+
+<img src="assets/carto/pattern-matching-viewer.png" alt="Pattern Matching Viewer screen showing 12-lead comparison with similarity score" />
+<span class="fig-cap">CARTO 3 Pattern Matching Viewer · 左：template (-0.14 similarity)、右：clinical PVC 12-lead 對照</span>
+
+Note:
+左邊是建立好的 BS PVC 1 template，右邊是即時比對的 beat。系統會給每一拍一個 similarity score（這張是 -0.14，代表還沒對上）。實戰中我們設定 ≥ 90% 才納入 LAT map。
+
+---
+
+## 建立 Template · Pattern Bank 介面
+
+<div class="cols image-wide">
+<div>
+
+### 步驟
+1. 挑一拍乾淨的 clinical PVC
+2. Type 選 **PVC**
+3. 12-lead 自動載入
+4. 設定 sample window (–18 → 150 ms)
+5. 按 **OK** 存入 Pattern Bank
+6. 之後 mapping 都用這個 template
+
+</div>
+<div>
+
+<img src="assets/carto/pattern-bank-single.png" alt="Pattern Bank single template setup" />
+<span class="fig-cap">Pattern Bank · 建立 BS PVC 1 template (CARTO 3 IFU)</span>
+
+</div>
+</div>
 
 ---
 

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540" font-family="'Inter','Noto Sans TC',sans-serif">
+  <text x="500" y="36" fill="#fff" font-weight="800" font-size="22" text-anchor="middle">CARTO 3 · 四大模組的角色與時機</text>
+  <text x="500" y="58" fill="#7A8499" font-size="12" text-anchor="middle">每個 case 都用到全部四個 · 各司其職、貫穿全程</text>
+
+  <!-- 2x2 grid -->
+  <g transform="translate(60,90)">
+    <!-- Pattern Matching -->
+    <g>
+      <rect width="430" height="200" rx="14" fill="#16223D" stroke="#16B8C7" stroke-width="2"/>
+      <circle cx="38" cy="38" r="22" fill="#16B8C7"/>
+      <text x="38" y="46" fill="#0B1E3F" font-weight="900" font-size="18" text-anchor="middle">PM</text>
+      <text x="76" y="38" fill="#fff" font-weight="800" font-size="18">Pattern Matching</text>
+      <text x="76" y="58" fill="#16B8C7" font-size="12" font-weight="700">VPC 過濾器 · 全程開啟</text>
+      <text x="20" y="100" fill="#FFD166" font-weight="700" font-size="11">使用時機</text>
+      <text x="20" y="120" fill="#B8C0D0" font-size="12">• 一開始 baseline 即開</text>
+      <text x="20" y="140" fill="#B8C0D0" font-size="12">• Mapping 時過濾 same-VPC beats</text>
+      <text x="20" y="160" fill="#B8C0D0" font-size="12">• Ablation 後確認 target 消失</text>
+      <text x="20" y="184" fill="#16B8C7" font-style="italic" font-size="12">「確保每個點都是同一顆 VPC」</text>
+    </g>
+
+    <!-- Auto Pattern Bank -->
+    <g transform="translate(450,0)">
+      <rect width="430" height="200" rx="14" fill="#16223D" stroke="#F39200" stroke-width="2"/>
+      <circle cx="38" cy="38" r="22" fill="#F39200"/>
+      <text x="38" y="46" fill="#0B1E3F" font-weight="900" font-size="18" text-anchor="middle">APB</text>
+      <text x="76" y="38" fill="#fff" font-weight="800" font-size="18">Auto Pattern Bank</text>
+      <text x="76" y="58" fill="#F39200" font-size="12" font-weight="700">VPC 自動分類器</text>
+      <text x="20" y="100" fill="#FFD166" font-weight="700" font-size="11">使用時機</text>
+      <text x="20" y="120" fill="#B8C0D0" font-size="12">• Baseline · 多 morphology case</text>
+      <text x="20" y="140" fill="#B8C0D0" font-size="12">• Redo case 分類 morphology</text>
+      <text x="20" y="160" fill="#B8C0D0" font-size="12">• Ablation 後判斷是不是新型</text>
+      <text x="20" y="184" fill="#F39200" font-style="italic" font-size="12">「分成 A 型、B 型、C 型」</text>
+    </g>
+
+    <!-- LAT Hybrid -->
+    <g transform="translate(0,220)">
+      <rect width="430" height="200" rx="14" fill="#16223D" stroke="#C8102E" stroke-width="2"/>
+      <circle cx="38" cy="38" r="22" fill="#C8102E"/>
+      <text x="38" y="46" fill="#fff" font-weight="900" font-size="18" text-anchor="middle">LAT</text>
+      <text x="76" y="38" fill="#fff" font-weight="800" font-size="18">LAT Hybrid</text>
+      <text x="76" y="58" fill="#FB7185" font-size="12" font-weight="700">Activation Mapping · 找最早</text>
+      <text x="20" y="100" fill="#FFD166" font-weight="700" font-size="11">使用時機</text>
+      <text x="20" y="120" fill="#B8C0D0" font-size="12">• Target morphology 確認後</text>
+      <text x="20" y="140" fill="#B8C0D0" font-size="12">• 開始收 activation points</text>
+      <text x="20" y="160" fill="#B8C0D0" font-size="12">• 找 –20 / –30 / –40 ms early sites</text>
+      <text x="20" y="184" fill="#FB7185" font-style="italic" font-size="12">「誰最早 depolarize → 接近 origin」</text>
+    </g>
+
+    <!-- PASO -->
+    <g transform="translate(450,220)">
+      <rect width="430" height="200" rx="14" fill="#16223D" stroke="#7C5CFF" stroke-width="2"/>
+      <circle cx="38" cy="38" r="22" fill="#7C5CFF"/>
+      <text x="38" y="46" fill="#fff" font-weight="900" font-size="14" text-anchor="middle">PASO</text>
+      <text x="86" y="38" fill="#fff" font-weight="800" font-size="18">PASO</text>
+      <text x="86" y="58" fill="#B4A0FF" font-size="12" font-weight="700">Pace Mapping · 確認像不像</text>
+      <text x="20" y="100" fill="#FFD166" font-weight="700" font-size="11">使用時機</text>
+      <text x="20" y="120" fill="#B8C0D0" font-size="12">• VPC 少時主力 (induction + pacing)</text>
+      <text x="20" y="140" fill="#B8C0D0" font-size="12">• Activation 找到 early site 後 confirm</text>
+      <text x="20" y="160" fill="#B8C0D0" font-size="12">• Ablation 前最後確認</text>
+      <text x="20" y="184" fill="#B4A0FF" font-style="italic" font-size="12">「paced QRS vs clinical PVC」</text>
+    </g>
+  </g>
+
+  <!-- bottom note -->
+  <g transform="translate(60,500)">
+    <rect width="880" height="30" rx="6" fill="#C8102E" opacity="0.15" stroke="#FB7185"/>
+    <text x="440" y="20" fill="#FB7185" font-weight="700" font-size="13" text-anchor="middle">成功公式 = same morphology + earliest LAT + unipolar QS + PASO 高 + stable contact + safe anatomy</text>
+  </g>
+</svg>

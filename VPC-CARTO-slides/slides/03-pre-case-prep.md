@@ -13,40 +13,10 @@ Note:
 
 ## Overall Workflow Map
 
-```text
-1. Pre-case preparation
-   ↓
-2. Patient setup + CARTO patch / catheter setup
-   ↓
-3. Baseline rhythm assessment
-   ↓
-4. 建立目標 VPC morphology
-      → Pattern Matching
-      → Auto Pattern Bank
-   ↓
-5. Anatomy map
-      → RA/RV/LV/OT/Aortic cusp/CS 視懷疑 origin 決定
-   ↓
-6. Activation mapping
-      → LAT Hybrid
-      → 找 earliest ventricular activation
-   ↓
-7. Pace mapping
-      → PASO
-      → 確認 pace map similarity
-   ↓
-8. RF ablation
-      → earliest + good unipolar + good PASO + anatomy safe zone
-   ↓
-9. Post-ablation validation
-      → spontaneous VPC elimination
-      → isoproterenol / burst pacing / waiting period
-   ↓
-10. Final documentation
-```
+<img src="assets/diagrams/workflow-flow.svg" alt="VPC ablation overall workflow with CARTO 3 modules at each step" />
 
 Note:
-這張圖是貫穿整個 case 的骨幹，後面所有章節都在解釋其中一步。
+這張圖是貫穿整個 case 的骨幹，後面所有章節都在解釋其中一步。橘色 = Pattern Matching / APB，紅色 = LAT Hybrid，紫色 = PASO。
 
 ---
 

@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 460" font-family="'Inter','Noto Sans TC',sans-serif">
+  <defs>
+    <linearGradient id="gOrange" x1="0" x2="1">
+      <stop offset="0" stop-color="#F39200"/>
+      <stop offset="1" stop-color="#E37222"/>
+    </linearGradient>
+    <linearGradient id="gNavy" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1A3A7A"/>
+      <stop offset="1" stop-color="#0B1E3F"/>
+    </linearGradient>
+    <linearGradient id="gRed" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#E0334D"/>
+      <stop offset="1" stop-color="#C8102E"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7A8499"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="550" y="32" fill="#fff" font-weight="800" font-size="22" text-anchor="middle">VPC Ablation Workflow · CARTO 3 Modules</text>
+
+  <!-- Row 1: 5 steps -->
+  <g>
+    <rect x="20" y="70" width="180" height="110" rx="14" fill="url(#gNavy)" stroke="#16B8C7" stroke-width="1.5"/>
+    <text x="110" y="100" fill="#16B8C7" font-size="11" letter-spacing="2" text-anchor="middle">STEP 1</text>
+    <text x="110" y="128" fill="#fff" font-weight="700" font-size="16" text-anchor="middle">Pre-case Prep</text>
+    <text x="110" y="152" fill="#B8C0D0" font-size="11" text-anchor="middle">12-lead EKG</text>
+    <text x="110" y="168" fill="#B8C0D0" font-size="11" text-anchor="middle">預判 origin</text>
+
+    <rect x="240" y="70" width="180" height="110" rx="14" fill="url(#gNavy)" stroke="#16B8C7" stroke-width="1.5"/>
+    <text x="330" y="100" fill="#16B8C7" font-size="11" letter-spacing="2" text-anchor="middle">STEP 2</text>
+    <text x="330" y="128" fill="#fff" font-weight="700" font-size="16" text-anchor="middle">Setup &amp; Baseline</text>
+    <text x="330" y="152" fill="#B8C0D0" font-size="11" text-anchor="middle">CARTO patch · Catheter</text>
+    <text x="330" y="168" fill="#B8C0D0" font-size="11" text-anchor="middle">VPC 頻率觀察</text>
+
+    <rect x="460" y="70" width="180" height="110" rx="14" fill="url(#gOrange)" stroke="#FFD166" stroke-width="2"/>
+    <text x="550" y="100" fill="#0B1E3F" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">STEP 3 · MORPHOLOGY</text>
+    <text x="550" y="128" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Pattern Matching</text>
+    <text x="550" y="148" fill="#0B1E3F" font-weight="600" font-size="13" text-anchor="middle">+ Auto Pattern Bank</text>
+    <text x="550" y="168" fill="#3A4A5C" font-size="11" text-anchor="middle">鎖定 target VPC · 分類 morphology</text>
+
+    <rect x="680" y="70" width="180" height="110" rx="14" fill="url(#gRed)" stroke="#FFD166" stroke-width="2"/>
+    <text x="770" y="100" fill="#fff" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">STEP 4 · MAPPING</text>
+    <text x="770" y="128" fill="#fff" font-weight="800" font-size="16" text-anchor="middle">LAT Hybrid</text>
+    <text x="770" y="148" fill="#fff" font-weight="600" font-size="13" text-anchor="middle">Activation Mapping</text>
+    <text x="770" y="168" fill="#FFD8DD" font-size="11" text-anchor="middle">找 earliest activation site</text>
+
+    <rect x="900" y="70" width="180" height="110" rx="14" fill="#7C5CFF" stroke="#B4A0FF" stroke-width="2"/>
+    <text x="990" y="100" fill="#fff" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">STEP 5 · PACING</text>
+    <text x="990" y="128" fill="#fff" font-weight="800" font-size="16" text-anchor="middle">PASO</text>
+    <text x="990" y="148" fill="#fff" font-weight="600" font-size="13" text-anchor="middle">Pace Mapping</text>
+    <text x="990" y="168" fill="#E2D9FF" font-size="11" text-anchor="middle">確認 similarity</text>
+  </g>
+
+  <!-- Arrows row 1 -->
+  <line x1="200" y1="125" x2="240" y2="125" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="420" y1="125" x2="460" y2="125" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="640" y1="125" x2="680" y2="125" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="860" y1="125" x2="900" y2="125" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Down arrow -->
+  <path d="M990 200 L990 230 L550 230 L550 250" fill="none" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Row 2: ablation + validation -->
+  <g>
+    <rect x="200" y="270" width="220" height="110" rx="14" fill="url(#gNavy)" stroke="#FB7185" stroke-width="2"/>
+    <text x="310" y="298" fill="#FB7185" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">STEP 6 · ABLATION</text>
+    <text x="310" y="324" fill="#fff" font-weight="800" font-size="16" text-anchor="middle">RF Ablation</text>
+    <text x="310" y="346" fill="#B8C0D0" font-size="11" text-anchor="middle">earliest + unipolar QS</text>
+    <text x="310" y="362" fill="#B8C0D0" font-size="11" text-anchor="middle">+ high PASO + safe anatomy</text>
+
+    <rect x="460" y="270" width="220" height="110" rx="14" fill="url(#gNavy)" stroke="#4ADE80" stroke-width="2"/>
+    <text x="570" y="298" fill="#4ADE80" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">STEP 7 · VALIDATION</text>
+    <text x="570" y="324" fill="#fff" font-weight="800" font-size="16" text-anchor="middle">Post-ablation Wait</text>
+    <text x="570" y="346" fill="#B8C0D0" font-size="11" text-anchor="middle">20–30 min spontaneous</text>
+    <text x="570" y="362" fill="#B8C0D0" font-size="11" text-anchor="middle">+ Isoproterenol 誘發</text>
+
+    <rect x="720" y="270" width="220" height="110" rx="14" fill="url(#gOrange)" stroke="#FFD166" stroke-width="2"/>
+    <text x="830" y="298" fill="#0B1E3F" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">STEP 8 · CONFIRM</text>
+    <text x="830" y="324" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Pattern Matching</text>
+    <text x="830" y="346" fill="#3A4A5C" font-size="11" text-anchor="middle">+ Auto Pattern Bank</text>
+    <text x="830" y="362" fill="#3A4A5C" font-size="11" text-anchor="middle">確認 target morphology 消失</text>
+  </g>
+
+  <line x1="420" y1="325" x2="460" y2="325" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="680" y1="325" x2="720" y2="325" stroke="#7A8499" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <g transform="translate(40,415)">
+    <circle r="6" fill="#F39200"/>
+    <text x="14" y="4" fill="#B8C0D0" font-size="11">Pattern Matching · Auto Pattern Bank</text>
+    <circle cx="280" r="6" fill="#C8102E"/>
+    <text x="294" y="4" fill="#B8C0D0" font-size="11">LAT Hybrid</text>
+    <circle cx="420" r="6" fill="#7C5CFF"/>
+    <text x="434" y="4" fill="#B8C0D0" font-size="11">PASO</text>
+    <circle cx="540" r="6" fill="#1A3A7A" stroke="#16B8C7"/>
+    <text x="554" y="4" fill="#B8C0D0" font-size="11">CARTO Anatomy / 一般 phase</text>
+  </g>
+</svg>

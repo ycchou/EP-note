@@ -13,14 +13,27 @@ Note:
 
 ## 最理想 target
 
+<div class="cols image-wide">
+<div>
+
 ```text
-Earliest activation + unipolar QS + PASO high score
+Earliest activation
++ unipolar QS
++ PASO high score
 ```
 
 <div class="callout gold">
 <span class="label">Sweet Spot</span>
-這種最適合 ablation。<br/>
 LAT 找位置、PASO 確認相似、unipolar QS 證明 focal — 三項齊全才下手。
+</div>
+
+</div>
+<div>
+
+<img src="assets/carto/lat-propagation-3d.png" alt="LAT propagation 3D chamber view" />
+<span class="fig-cap">LAT propagation 3D · 紅色 hot zone = earliest activation cluster</span>
+
+</div>
 </div>
 
 Note:

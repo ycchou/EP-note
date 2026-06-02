@@ -36,7 +36,7 @@ Note:
 
 ## LAT Hybrid 的目的
 
-<div class="callout">
+<div class="callout orange">
 <strong>LAT Hybrid 是用來建立 VPC 的 local activation time map，找出最早的 ventricular activation site。</strong>
 </div>
 
@@ -47,35 +47,51 @@ Note:
 誰最可能靠近 VPC origin。
 ```
 
+---
+
+## LAT Activation Map · 實際畫面
+
+<img src="assets/carto/lat-activation-map.png" alt="CARTO 3 LAT activation map: dual chamber views with rainbow color (red=earliest, blue=latest)" />
+<span class="fig-cap">CARTO 3 LAT Map · 紅色 = earliest activation；藍紫色 = latest。下方為 surface ECG (V5) 與 reference EGM</span>
+
 Note:
-這是 activation mapping 的基本原理 — 最早被激活的點，就是電氣傳導的起點。
+這是真實 LAT map — 左邊是 LV mapping、右邊同一個 case 的另一個 chamber 視角。紅色區域代表 -195 ms (最早)，依顏色梯度往藍色 (+372 ms, 最晚) 推進。Operator 要找的就是「紅色最早區域」+「unipolar QS」+「PASO 高」。
 
 ---
 
 ## Reference Annotation · 核心設定
 
-你需要選定一個穩定 reference，常見方式：
+<div class="cols image-wide">
+<div>
 
 | Reference | 說明 |
 | --- | --- |
-| **Surface ECG QRS onset** | 常用於 PVC activation timing |
+| **Surface ECG QRS onset** | PVC activation timing 首選 |
 | Intracardiac reference | 若穩定，可輔助 |
 | CS / RV catheter | 需確認每拍穩定 |
 
-VPC map 常見是以：
+VPC map 常見以 **PVC QRS onset = time zero**，找 local EGM 比 QRS onset 早多少 ms。
 
-```text
-PVC QRS onset = time zero
-```
+</div>
+<div>
 
-然後找 local EGM 比 QRS onset 早多少 ms。
+<img src="assets/carto/reference-egm.png" alt="CARTO 3 reference EGM channels with annotation marker" />
+<span class="fig-cap">5-channel reference EGM (REF 1-2 ~ 9-10) · 紅虛線標註 reference timing</span>
+
+</div>
+</div>
+
+Note:
+Reference 不穩會讓 LAT map 全部跟著漂 — 進 lab 前 5 分鐘觀察 reference 訊號穩定性是必要功課。
 
 Note:
 QRS onset 在 12-lead 上要看最早出現偏離 baseline 的那條 lead，通常用 V1 或 lead II 為基準。
 
 ---
 
-## ⭐ 最重要的數字
+## ⭐ 最重要的數字 · LAT Timing Ruler
+
+<img src="assets/diagrams/lat-timing-ruler.svg" alt="LAT timing threshold ruler showing -20, -30, -40 ms zones" />
 
 | Finding | 意義 |
 | --- | --- |
@@ -155,6 +171,9 @@ Auto annotation 有時會把 far-field signal 抓成 local onset；早 30 ms 的
 
 ## ✅ Good Activation Target 長怎樣？
 
+<div class="cols image-wide">
+<div>
+
 ```text
 PVC morphology = target VPC
 Local bipolar EGM = earliest
@@ -164,9 +183,18 @@ PASO = 92%
 Anatomy = RVOT septal site
 ```
 
-<div class="callout">
-<span class="label">這就是很漂亮的 ablation target</span>
-六個條件全部對上 → confident 燒下去。
+<div class="callout orange">
+<span class="label">六項齊全</span>
+這就是很漂亮的 ablation target — confident 燒下去。
+</div>
+
+</div>
+<div>
+
+<img src="assets/carto/egm-timing-annotation.png" alt="CARTO EGM with timing annotation showing local bipolar timing" />
+<span class="fig-cap">EGM annotation view · LAT 65 ms · CL 242 · 多通道對齊比較</span>
+
+</div>
 </div>
 
 Note:

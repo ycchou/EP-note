@@ -13,16 +13,28 @@ Note:
 
 ## ✅ 好的反應
 
+<div class="cols image-wide">
+<div>
+
 | Ablation response | 意義 |
 | --- | --- |
-| **PVC acceleration then suppression** | 常見有效反應 |
+| **PVC acceleration → suppression** | 常見有效反應 |
 | **PVC 消失** | good sign |
 | local EGM amplitude 下降 | lesion effect |
-| pace map 不再 capture 或 morphology 改變 | local tissue modified |
+| pace map 不再 capture | local tissue modified |
 
-<div class="callout">
+<div class="callout orange">
 <span class="label">PVC acceleration</span>
 燒下去後 PVC 先短暫變多 → 再消失，這是「lesion 正在生效」的標誌反應。
+</div>
+
+</div>
+<div>
+
+<img src="assets/carto/rf-ablation-params.png" alt="CARTO RF ablation parameter display: 50W, 35.5°C, 84Ω, 14sec" />
+<span class="fig-cap">RF 即時參數 · 50 W · 35.5 °C · 84 Ω · 14 sec — 看 impedance drop 與 force trend</span>
+
+</div>
 </div>
 
 Note:

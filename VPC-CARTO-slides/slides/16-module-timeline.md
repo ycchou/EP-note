@@ -31,6 +31,12 @@ Note:
 
 ---
 
+## 四個模組角色一覽
+
+<img src="assets/diagrams/module-quadrant.svg" alt="Four CARTO modules quadrant" />
+
+---
+
 ## 四個模組的時間軸視覺化
 
 <div class="cols">

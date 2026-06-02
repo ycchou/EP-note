@@ -37,7 +37,7 @@ Redo case 最常見的情境就是「上次燒掉一顆，又長出新的一顆�
 
 ## Auto Pattern Bank 的角色
 
-<div class="callout red">
+<div class="callout orange">
 <strong>Auto Pattern Bank 會自動把不同 morphology 的 VPC 分類成不同 pattern。</strong>
 </div>
 
@@ -46,6 +46,16 @@ Redo case 最常見的情境就是「上次燒掉一顆，又長出新的一顆�
 ```text
 自動幫你把 VPC 分成 A 型、B 型、C 型。
 ```
+
+---
+
+## Auto Pattern Bank · 實際畫面
+
+<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" />
+<span class="fig-cap">CARTO 3 Auto Pattern Bank · 自動把這個 case 的 VPC 分成 6 種 pattern，並標示 burden 與 cycle length</span>
+
+Note:
+這張是真實 CARTO 畫面 — Pattern 1 (PVC, 547 beats) 是主要 morphology, 其他 Pattern 2–6 是不同的 PVC type。Operator 看完這張就知道：(1) 病人有幾型 (2) 哪一型最多 (3) 應該打哪一型。
 
 ### 範例
 

@@ -15,7 +15,7 @@ Note:
 
 首先看胸前導程的 **V1**。我們用傳導阻滯的形態（Morphology）來理解它。
 
-<div class="cols">
+<div class="cols image-text">
 <div>
 
 ### LBBB pattern
@@ -29,6 +29,15 @@ Note:
 </div>
 <div>
 
+<img src="assets/ecg/Left_bundle_branch_block_ECG_characteristics.svg" alt="LBBB pattern V1 vs V6" class="no-shadow" style="background:#fff;padding:8px;" />
+<span class="fig-cap">LBBB pattern · V1 rS, V6 R (Wikimedia)</span>
+
+</div>
+</div>
+
+<div class="cols image-text">
+<div>
+
 ### RBBB pattern
 主要向上，單峰 R 或 rsR' → 源自 **左心室 (LV)**
 
@@ -36,6 +45,12 @@ Note:
 <span class="label">背後邏輯</span>
 訊號從左心室發出，往右前方（朝向 V1），因此呈現正向波。
 </div>
+
+</div>
+<div>
+
+<img src="assets/ecg/Right_bundle_branch_block_ECG_characteristics.svg" alt="RBBB pattern V1 vs V6" class="no-shadow" style="background:#fff;padding:8px;" />
+<span class="fig-cap">RBBB pattern · V1 rsR' (Wikimedia)</span>
 
 </div>
 </div>
@@ -114,7 +129,13 @@ Septal site 通常 ablation 比較安全有效；free wall 要小心 perforation
 
 ---
 
-## ✅ 快速總結複習表
+## ✅ 三步驟視覺化
+
+<img src="assets/diagrams/vpc-origin-3steps.svg" alt="VPC origin 3-step localization" />
+
+---
+
+## 快速總結複習表
 
 | 步驟 | 觀察導程 | 判讀結果 |
 | --- | --- | --- |

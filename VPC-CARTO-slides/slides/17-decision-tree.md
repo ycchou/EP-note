@@ -13,6 +13,15 @@ Note:
 
 ## VPC Decision Tree
 
+<img src="assets/diagrams/decision-tree.svg" alt="VPC ablation decision tree visualization" />
+
+Note:
+這棵樹是 case 中遇到分岔時的「導航圖」 — 每個 yes / no 都有清楚的下一步。完整文字版見下一張。
+
+---
+
+## Decision Tree · 文字版
+
 ```text
 VPC 出現
 │
@@ -37,9 +46,6 @@ VPC 出現
     ├─ Target PVC 消失 → wait + induction
     └─ 未消失         → 重新檢查 morphology / chamber / mapping quality
 ```
-
-Note:
-這棵樹是 case 中遇到分岔時的「導航圖」 — 每個 yes / no 都有清楚的下一步。
 
 ---
 

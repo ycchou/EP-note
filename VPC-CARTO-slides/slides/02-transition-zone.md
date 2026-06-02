@@ -34,35 +34,23 @@ Note:
 
 ## 實戰：怎麼看？
 
-<div class="cols three">
+<div class="cols image-wide">
 <div>
 
 ### V1 · V2
-- R 波較小
-- S 波較深
-- QRS 整體偏負向
-
-像「深谷」。
-
-</div>
-<div>
+R 波較小、S 波較深、QRS 整體偏負向，像「深谷」。
 
 ### V3 · V4
-- R 波逐漸變高
-- S 波逐漸變淺
-- 雙相波交界
+R 波逐漸變高、S 波逐漸變淺，這個過程就是 **R wave progression**。
 
-**R wave progression**。
+### V5 · V6
+R 波明顯、S 波幾乎消失、QRS 正向，電極靠近左側胸壁。
 
 </div>
 <div>
 
-### V5 · V6
-- R 波明顯
-- S 波幾乎消失
-- QRS 正向
-
-電極靠近左側胸壁。
+<img src="assets/ecg/transition-zone-progression.png" alt="Transition zone V1-V6 progression: Normal / Early / Late" />
+<span class="fig-cap">Normal · Early · Late transition 對照圖</span>
 
 </div>
 </div>

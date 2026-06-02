@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" font-family="'Inter','Noto Sans TC',sans-serif">
+  <text x="500" y="36" fill="#fff" font-weight="800" font-size="22" text-anchor="middle">PASO Similarity · Pacing QRS vs Clinical PVC</text>
+
+  <!-- Similarity bar -->
+  <g transform="translate(80,80)">
+    <rect width="840" height="48" rx="8" fill="#0E1830" stroke="#1F2D4F"/>
+    <!-- 4 zones -->
+    <rect x="0" y="0" width="210" height="48" rx="8 0 0 8" fill="#FB7185" opacity="0.85"/>
+    <rect x="210" y="0" width="210" height="48" fill="#FFD166" opacity="0.85"/>
+    <rect x="420" y="0" width="210" height="48" fill="#4ADE80" opacity="0.85"/>
+    <rect x="630" y="0" width="210" height="48" rx="0 8 8 0" fill="#16B8C7" opacity="0.95"/>
+    <!-- separators -->
+    <line x1="210" y1="0" x2="210" y2="48" stroke="#0E1830" stroke-width="2"/>
+    <line x1="420" y1="0" x2="420" y2="48" stroke="#0E1830" stroke-width="2"/>
+    <line x1="630" y1="0" x2="630" y2="48" stroke="#0E1830" stroke-width="2"/>
+    <!-- labels inside zones -->
+    <text x="105" y="20" fill="#0B1E3F" font-weight="800" font-size="13" text-anchor="middle">&lt; 85%</text>
+    <text x="105" y="38" fill="#0B1E3F" font-size="11" text-anchor="middle">capture/output 問題</text>
+    <text x="315" y="20" fill="#0B1E3F" font-weight="800" font-size="13" text-anchor="middle">85–90%</text>
+    <text x="315" y="38" fill="#0B1E3F" font-size="11" text-anchor="middle">可接受 · 搭配 activation</text>
+    <text x="525" y="20" fill="#0B1E3F" font-weight="800" font-size="13" text-anchor="middle">90–95%</text>
+    <text x="525" y="38" fill="#0B1E3F" font-size="11" text-anchor="middle">很有價值</text>
+    <text x="735" y="20" fill="#0B1E3F" font-weight="800" font-size="13" text-anchor="middle">&gt; 95%</text>
+    <text x="735" y="38" fill="#0B1E3F" font-size="11" text-anchor="middle">非常好</text>
+  </g>
+
+  <!-- Lead-by-lead comparison cards -->
+  <g transform="translate(80,180)">
+    <text x="0" y="0" fill="#FFD166" font-weight="700" font-size="14">⚠️ 關鍵：總分不是重點 · 看哪些 lead 不像</text>
+
+    <g transform="translate(0,20)">
+      <rect width="395" height="140" rx="10" fill="#16223D" stroke="#1F2D4F"/>
+      <text x="14" y="26" fill="#FB7185" font-weight="700" font-size="13">差異 → 修正方向</text>
+      <g font-size="12" fill="#B8C0D0">
+        <text x="14" y="50">V1–V2 R 波太小</text>
+        <text x="220" y="50" fill="#16B8C7">→ 更左側 / 更 posterior</text>
+        <text x="14" y="70">Transition 比 PVC 晚</text>
+        <text x="220" y="70" fill="#16B8C7">→ pacing 太右，往左</text>
+        <text x="14" y="90">Lead I 太正</text>
+        <text x="220" y="90" fill="#16B8C7">→ 太右，往左</text>
+        <text x="14" y="110">Inferior leads 不夠高</text>
+        <text x="220" y="110" fill="#16B8C7">→ 太低，往 superior</text>
+        <text x="14" y="130">III 比 II 差很多</text>
+        <text x="220" y="130" fill="#16B8C7">→ 左右/前後修正</text>
+      </g>
+    </g>
+
+    <g transform="translate(425,20)">
+      <rect width="395" height="140" rx="10" fill="#0B1E3F" stroke="#C8102E"/>
+      <text x="14" y="26" fill="#FB7185" font-weight="800" font-size="13">⚠️ PASO 高分 ≠ 真正 origin</text>
+      <text x="14" y="48" fill="#fff" font-size="12">高分可能只是 <tspan font-weight="700" fill="#FFD166">exit site</tspan>，不是 deep origin。</text>
+      <text x="14" y="68" fill="#B8C0D0" font-size="12">特別在：</text>
+      <g font-size="12" fill="#16B8C7">
+        <text x="14" y="88">• LV summit</text>
+        <text x="210" y="88">• Papillary muscle</text>
+        <text x="14" y="106">• Intramural PVC</text>
+        <text x="210" y="106">• Fascicular PVC</text>
+        <text x="14" y="124">• Epicardial origin</text>
+      </g>
+    </g>
+  </g>
+</svg>

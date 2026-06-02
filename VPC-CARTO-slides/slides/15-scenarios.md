@@ -90,50 +90,64 @@ Note:
 
 ## Scenario 4 · Suspected LV Summit PVC
 
-### Workflow
+<div class="cols image-wide">
+<div>
 
-```text
+### Workflow
 1. Pattern Matching 鎖定 target
 2. Auto Pattern Bank 確認 morphology
-3. 建 LVOT / aortic cusp / RVOT / CS anatomy
-4. LAT Hybrid 分別比較各 chamber earliest timing
-5. PASO 比較 LCC、RCC、LV endocardium、RVOT、GCV / AIV
-6. 若 CS / GCV / AIV early，要確認 coronary distance
+3. 建 **LVOT / aortic cusp / RVOT / CS** anatomy
+4. LAT Hybrid 分別比較各 chamber earliest
+5. PASO 比較 LCC / RCC / LV endo / RVOT / GCV / AIV
+6. CS / GCV / AIV early → 確認 coronary distance
 7. 選最安全、最早、PASO 最佳位置 ablate
-```
+
+</div>
+<div>
+
+<img src="assets/ecg/anatomy-ec61c562.png" alt="LV summit anatomy: Ao, LCX, LAD, GCV, RCA, CS labeled" />
+<span class="fig-cap">LV summit 解剖 · Ao / LV summit / LAD / LCX / GCV / CS — coronary 距離是 ablation 安全關鍵</span>
+
+</div>
+</div>
 
 <div class="callout red">
 <span class="label">重點</span>
-LV summit <strong>不要只看一個 chamber</strong>。
-常常需要比較：<br/>
-<code>RVOT vs LVOT vs cusp vs coronary venous system</code>
+LV summit <strong>不要只看一個 chamber</strong>。常常需要比較：<code>RVOT vs LVOT vs cusp vs coronary venous system</code>
 </div>
 
 Note:
-LV summit 是 CARTO 3 mapping 最展現價值的 case — 因為可以多 chamber 並列比較 timing。
+LV summit 是 CARTO 3 mapping 最展現價值的 case — 因為可以多 chamber 並列比較 timing。注意 LAD/LCX 距離，必要時做 coronary angiography 或 ICE 確認。
 
 ---
 
 ## Scenario 5 · Papillary Muscle PVC
 
-### Workflow
+<div class="cols image-wide">
+<div>
 
-```text
+### Workflow
 1. Pattern Matching 確認 target PVC
 2. 建 LV anatomy
-3. ICE 建 papillary muscle anatomy
+3. **ICE** 建 papillary muscle anatomy
 4. LAT Hybrid 找 earliest papillary region
 5. PASO 輔助，但分數可能不穩
-6. 重點看 catheter stability / contact
+6. 重點看 catheter **stability / contact**
 7. RF lesion 可能需要多點
 8. 術後用 Pattern Matching 確認 morphology 消失
-```
+
+</div>
+<div>
+
+<img src="assets/carto/chamber-points-lesions.png" alt="LV chamber view with mapping points and RF lesions" />
+<span class="fig-cap">LV chamber view · mapping points + RF lesions cluster — papillary case 常需多點 lesion</span>
+
+</div>
+</div>
 
 <div class="callout gold">
 <span class="label">重點</span>
-Papillary muscle case：<br/>
-PASO 可能受 <strong>catheter orientation 和 capture area</strong> 影響。<br/>
-<strong>ICE + contact stability 很重要。</strong>
+Papillary muscle case：PASO 可能受 <strong>catheter orientation 和 capture area</strong> 影響。<strong>ICE + contact stability 很重要。</strong>
 </div>
 
 Note:

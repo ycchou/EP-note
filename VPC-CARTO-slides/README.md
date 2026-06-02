@@ -160,16 +160,43 @@ VPC-CARTO-slides/
 │   ├── 18-lab-script.md
 │   └── 19-summary-closing.md
 └── assets/
-    ├── jnj-logo.svg        ← J&J 商標
-    ├── diagrams/           ← 自訂流程圖（預留）
-    └── ecg/                ← ECG 範例截圖（預留）
+    ├── carto3-logo.png            ← 官方 CARTO 3 System logo
+    ├── biosense-webster-logo.png  ← Biosense Webster (J&J family)
+    ├── jnj-logo.svg               ← J&J script signature
+    ├── carto/                     ← CARTO 3 系統 UI 截圖（IFU 來源）
+    │   ├── pattern-matching-viewer.png
+    │   ├── pattern-bank-single.png
+    │   ├── auto-pattern-bank-panel.png
+    │   ├── lat-activation-map.png
+    │   ├── lat-propagation-3d.png
+    │   ├── egm-timing-annotation.png
+    │   ├── reference-egm.png
+    │   ├── ct-segmentation.png
+    │   ├── location-setup-patches.png
+    │   ├── catheter-ports.png
+    │   ├── rf-ablation-params.png
+    │   └── chamber-points-lesions.png
+    ├── diagrams/                  ← 自訂 SVG 教學圖
+    │   ├── workflow-flow.svg
+    │   ├── vpc-origin-3steps.svg
+    │   ├── lat-timing-ruler.svg
+    │   ├── paso-similarity.svg
+    │   ├── decision-tree.svg
+    │   └── module-quadrant.svg
+    └── ecg/                       ← ECG / 解剖圖
+        ├── 12leadECG.jpg
+        ├── Left_bundle_branch_block_ECG_characteristics.svg
+        ├── Right_bundle_branch_block_ECG_characteristics.svg
+        ├── transition-zone-progression.png
+        └── anatomy-*.png
 ```
 
 ---
 
 ## 商標與授權
 
-- **Johnson & Johnson** 與 **CARTO 3** 為 Johnson & Johnson 及其子公司 Biosense Webster 的註冊商標。本簡報僅作為 J&J / Biosense Webster CARTO 3 trainer 的內部訓練教材。
+- **Johnson & Johnson**、**Biosense Webster**、**CARTO 3** 為 Johnson & Johnson 及其子公司 Biosense Webster 的註冊商標。Logo 與 CARTO 3 系統 UI 截圖取自 ANVISA 公開之 CARTO™ 3 System IFU（Instruções de Utilização）文件，僅作為 J&J / Biosense Webster CARTO 3 trainer 的內部訓練教材使用。
+- ECG 與心臟解剖圖取自 Wikimedia Commons（CC-BY-SA）與 [`ycchou/EP-note`](https://github.com/ycchou/EP-note) 已標示的素材。
 - 投影片內容（文字、表格、決策樹）依據 [`ycchou/EP-note`](https://github.com/ycchou/EP-note) 的個人臨床筆記整理。
 - reveal.js 採 MIT License — 見 `lib/reveal.js/LICENSE`。
 

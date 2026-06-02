@@ -1,8 +1,10 @@
 <!-- .slide: class="title-slide" -->
 
-<div class="part-no">JOHNSON &amp; JOHNSON · CARTO 3 TRAINER EDITION</div>
+<img src="assets/carto3-logo.png" alt="CARTO 3 System" class="hero-logo no-shadow no-border" style="background:transparent;border:none;box-shadow:none;" />
 
-# VPC Ablation with CARTO 3
+<div class="part-no">BIOSENSE WEBSTER · TRAINER EDITION</div>
+
+# VPC Ablation Workflow
 
 <div class="lede">完整 Workflow · 從 Pre-case 到 Post-ablation</div>
 
@@ -10,7 +12,7 @@
   <span class="chip">Pattern Matching</span>
   <span class="chip">Auto Pattern Bank</span>
   <span class="chip red">LAT Hybrid</span>
-  <span class="chip">PASO</span>
+  <span class="chip cyan">PASO</span>
 </div>
 
 Note:
@@ -57,17 +59,11 @@ Note:
 </div>
 </div>
 
-Note:
-全程約 80 張投影片，會搭配真實 case 範例討論。
-
 ---
 
-## 一句話總結 · 整堂課的目標
+## 整堂課要記住的一張圖
 
-<div class="callout red">
-<span class="label">Core Workflow</span>
-VPC ablation 在 CARTO 3 的核心 workflow 是：先用 <strong>Pattern Matching / Auto Pattern Bank</strong> 把目標 VPC 型態鎖定，再用 <strong>LAT Hybrid</strong> 建 activation map 找 earliest site，最後用 <strong>PASO</strong> 做 pace mapping 確認出口與相似度，必要時回頭修正 target morphology。
-</div>
+<img src="assets/diagrams/workflow-flow.svg" alt="VPC ablation workflow flow diagram" />
 
 Note:
-這句話貫穿整堂課，每個 Part 都會回到這個架構。
+這張圖貫穿整堂課 — 每個 Part 都會回到這個架構。

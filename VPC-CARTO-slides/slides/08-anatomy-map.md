@@ -30,6 +30,9 @@ VPC 少的時候要把 anatomy 先做完整 — 因為 PASO 需要好的幾何�
 
 ## 根據懷疑 origin · 決定 map 哪裡
 
+<div class="cols image-wide">
+<div>
+
 | EKG 懷疑 | CARTO anatomy |
 | --- | --- |
 | **RVOT** | RV、RVOT、pulmonary valve |
@@ -39,6 +42,15 @@ VPC 少的時候要把 anatomy 先做完整 — 因為 PASO 需要好的幾何�
 | **Fascicular** | LV septum、Purkinje area |
 | **Papillary muscle** | LV chamber + **ICE geometry** |
 | **Para-Hisian** | RA septum、RV septum、His region、NCC |
+
+</div>
+<div>
+
+<img src="assets/ecg/anatomy-134e3167.png" alt="Cardiac valve plane: tricuspid, bicuspid (mitral), aortic, pulmonary" />
+<span class="fig-cap">心底瓣膜平面 · 4 個 valve 與相鄰 OT 結構的解剖關係</span>
+
+</div>
+</div>
 
 Note:
 這張表是 anatomy build 的 checklist。Pre-case 預判幫你知道要建哪幾個 chamber。
