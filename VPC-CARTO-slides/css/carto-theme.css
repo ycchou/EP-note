@@ -152,16 +152,20 @@
   font-weight: 600;
 }
 
-/* ----------  Images · constrained to slide stage (1280x800)  ----------
-   reveal.js stage is fixed 800px tall. With heading ~70px and footer logo
-   ~30px, useful image height is around 520px. We constrain max-height in
-   px so the value matches stage units regardless of browser viewport.
+/* ----------  Images · designed for 1280x720 (16:9) reveal.js stage  ----------
+   Budget on a 720px stage with 4% margin (= 662px usable):
+   - Heading h2 ≈ 80px (font + margins + underline)
+   - Caption / callout below ≈ 40px
+   - Safety pad ≈ 40px
+   → Leaves ≈ 500px height for a centered hero image.
+   For 2-column layouts the image shares width with text so we let it be
+   smaller (≤ 360px) to keep things balanced.
 */
 .reveal img {
   border-radius: 10px;
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
   max-width: 100%;
-  max-height: 460px;
+  max-height: 440px;
   height: auto;
   width: auto;
   margin: 0.3em auto;
@@ -171,17 +175,17 @@
   object-fit: contain;
 }
 
-/* SVG that should fit slide width (decision tree, workflow flow) */
+/* SVG that should fit slide width (decision tree, workflow flow, etc.) */
 .reveal img.svg-fit {
-  max-height: 540px;
+  max-height: 520px;
   max-width: 96%;
 }
 
-/* When image sits inside a 2-column layout it can be a bit smaller */
+/* When image sits inside a 2-column layout it shares width with text */
 .cols img,
 .cols.image-text img,
 .cols.image-wide img {
-  max-height: 400px;
+  max-height: 360px;
 }
 
 .reveal img.no-shadow {
