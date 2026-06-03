@@ -52,14 +52,10 @@ PASO 比較的是「人造的這拍」和「自然的這拍」 morphology — �
 
 ## ⭐ PASO 高分代表什麼？
 
-<img src="assets/diagrams/paso-similarity.svg" alt="PASO similarity bar with 4 zones" style="max-height:200px;" />
+<img src="assets/diagrams/paso-similarity.svg" alt="PASO similarity bar with 4 zones and lead refinement guide" class="svg-fit" />
 
-| PASO similarity | 解讀 |
-| --- | --- |
-| **&gt; 95%** | **非常好** |
-| **90–95%** | 很有價值 |
-| **85–90%** | 可接受，但需搭配 activation |
-| **&lt; 85%** | 可能不是最佳點，或 pacing capture / output / fusion 有問題 |
+Note:
+PASO 分數區間：&gt; 95% 非常好；90–95% 很有價值；85–90% 可接受但需搭配 activation；&lt; 85% 可能不是最佳點，或 pacing capture / output / fusion 有問題。但要記得「PASO 高 ≠ 真正 origin」，可能是 exit site。
 
 ---
 
