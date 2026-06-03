@@ -165,24 +165,14 @@ Note:
 
 ## 常見修正方向
 
-| Pace map 差異 | 可能要往哪裡修正 |
+| Pace map 差異 | 修正方向 |
 | --- | --- |
-| **V1–V2 R 波太小** | 可能要更左側 / 更 posterior |
-| transition 比 clinical PVC 晚 | pacing site 可能太右，要往左 |
-| **lead I 太正** | site 可能太右，要往左 |
-| inferior leads 不夠高 | site 可能太低，要往更 superior |
+| **V1–V2 R 波太小** | 更左側 / 更 posterior |
+| Transition 比 clinical PVC 晚 | pacing 太右，往左 |
+| **Lead I 太正** | site 太右，往左 |
+| Inferior leads 不夠高 | site 太低，往更 superior |
 | III 比 II 差很多 | 左右 / 前後方向需修正 |
-| aVL / aVR 不像 | outflow tract 左右上方位置需修正 |
+| aVL / aVR 不像 | OT 左右上方位置需修正 |
 
 Note:
 這張表是 PASO 修正的「導航地圖」 — 看哪條 lead 不像，就知道下一拍要往哪邊移 catheter。
-
----
-
-## 🎯 PASO · 一句話
-
-<div class="callout gold">
-<span class="label">記憶點</span>
-PASO = <strong>像不像的分數</strong>。<br/>
-高分支持 target，但<strong>「高分 ≠ origin」</strong>；每條 lead 不像的地方，就是 catheter 要修正的方向。
-</div>

@@ -6,227 +6,180 @@
 
 <span class="pill pill-lat">CARTO Module 3 / 4</span>
 
-<div class="subtitle">Activation Mapping · 找最早 ventricular activation site</div>
+<div class="subtitle">專為 PVC mapping 設計的 Hybrid Point · 位置取自 sinus、激活取自 PVC</div>
 
 Note:
-這是 Workflow Part 6–7 的核心。Target VPC morphology 確認後，就靠 LAT Hybrid 找 earliest site。
+LAT Hybrid 不是「一般 activation map」 — 它是 CARTO PRIME™ 模組中專門解決 PVC mapping 痛點的功能。下一張說明它真正在做什麼。
 
 ---
 
-## 什麼時候用？
+## LAT Hybrid 解決什麼問題？
 
 <div class="callout red">
-<strong>當你已經鎖定 target VPC morphology 後，開始做 activation map 時使用。</strong>
+<span class="label">核心問題</span>
+PVC 是 transient 心律 — 病人出現 PVC 時，<strong>呼吸與心搏的瞬間變化會讓 catheter 位置相對於 sinus rhythm 漂移</strong>。如果直接用 PVC 那一拍的 location 收點，整張 activation map 的幾何就會被「動過的位置」污染。
 </div>
-
-也就是：
-
-```text
-Pattern Matching / Auto Pattern Bank 確認目標 VPC
-                    ↓
-              開始收 activation points
-                    ↓
-                使用 LAT Hybrid
-```
-
-Note:
-順序很重要：沒先鎖定 morphology 就開 LAT，等於什麼都沒做。
-
----
-
-## LAT Hybrid 的目的
 
 <div class="callout orange">
-<strong>LAT Hybrid 是用來建立 VPC 的 local activation time map，找出最早的 ventricular activation site。</strong>
+<span class="label">LAT Hybrid 的解法</span>
+每一個 LAT Hybrid 點是<strong>「兩拍合成的 hybrid point」</strong>：
+<ul>
+<li><strong>Location data</strong>（catheter 位置）→ 取自 PVC 前的 <strong>sinus beat</strong></li>
+<li><strong>LAT / EGM / Force</strong>（電氣訊號）→ 取自 <strong>PVC beat</strong></li>
+</ul>
 </div>
 
-簡單說：
-
-```text
-誰最早 depolarize，
-誰最可能靠近 VPC origin。
-```
-
----
-
-## LAT Activation Map · 實際畫面
-
-<img src="assets/carto/lat-activation-map.png" alt="CARTO 3 LAT activation map: dual chamber views with rainbow color (red=earliest, blue=latest)" />
-<span class="fig-cap">CARTO 3 LAT Map · 紅色 = earliest activation；藍紫色 = latest。下方為 surface ECG (V5) 與 reference EGM</span>
-
 Note:
-這是真實 LAT map — 左邊是 LV mapping、右邊同一個 case 的另一個 chamber 視角。紅色區域代表 -195 ms (最早)，依顏色梯度往藍色 (+372 ms, 最晚) 推進。Operator 要找的就是「紅色最早區域」+「unipolar QS」+「PASO 高」。
+這是 CARTO PRIME™ 模組的功能，不是基本 LAT mapping。原理在 CARTO 3 IFU 第 320 頁有詳細說明。
 
 ---
 
-## Reference Annotation · 核心設定
+## Hybrid Point 怎麼運作
 
-<div class="cols image-wide">
-<div>
+<div class="workflow-grid">
+<div class="workflow-step">
+<div class="num">1</div>
+<div class="title">Pattern Bank 雙 template</div>
+<div class="desc">同時建立 PVC pattern + NSR pattern</div>
+</div>
+<div class="workflow-step">
+<div class="num">2</div>
+<div class="title">Auto acquisition</div>
+<div class="desc">系統在 PVC beat 前找 2 個連續 sinus beats 取位置</div>
+</div>
+<div class="workflow-step">
+<div class="num">3</div>
+<div class="title">Manual acquisition</div>
+<div class="desc">選定 PVC beat → 往前搜尋 5 個 sinus beats 找 location</div>
+</div>
+<div class="workflow-step">
+<div class="num">4</div>
+<div class="title">Non-Hybrid Point</div>
+<div class="desc">找不到 sinus → 用 PVC 位置，標註 Non-Hybrid Point</div>
+</div>
+<div class="workflow-step">
+<div class="num">5</div>
+<div class="title">Catheter 顯示位置</div>
+<div class="desc">畫面顯示 catheter 在 <strong>sinus rhythm 時的位置</strong></div>
+</div>
+<div class="workflow-step">
+<div class="num">6</div>
+<div class="title">電氣顯示</div>
+<div class="desc">map 顏色 = PVC 的 LAT 值</div>
+</div>
+</div>
 
-| Reference | 說明 |
+---
+
+## Map Setup · LAT Hybrid 必要條件
+
+| 條件 | 設定 |
 | --- | --- |
-| **Surface ECG QRS onset** | PVC activation timing 首選 |
-| Intracardiac reference | 若穩定，可輔助 |
-| CS / RV catheter | 需確認每拍穩定 |
-
-VPC map 常見以 **PVC QRS onset = time zero**，找 local EGM 比 QRS onset 早多少 ms。
-
-</div>
-<div>
-
-<img src="assets/carto/reference-egm.png" alt="CARTO 3 reference EGM channels with annotation marker" />
-<span class="fig-cap">5-channel reference EGM (REF 1-2 ~ 9-10) · 紅虛線標註 reference timing</span>
-
-</div>
-</div>
+| **Map type** | Ventricular maps only（atrial map 不可用） |
+| **Pattern Bank** | 必須同時有 **PVC** + **NSR** template |
+| **Pattern Matching filter** | 分別設定 PVC 與 NSR 兩條 |
+| **Position Stability filter** | 預設 **4 mm** · 對 hybrid map 成效關鍵 |
+| **Density filter** | 系統設為 maximum，不可修改 |
+| **Cycle Length filter** | 不可用 |
+| **Smart Index** | ⚠️ 不能與 LAT Hybrid 同時選 |
+| **Map Replay** | 可在 standard map ↔ LAT Hybrid 之間轉換 |
 
 Note:
-Reference 不穩會讓 LAT map 全部跟著漂 — 進 lab 前 5 分鐘觀察 reference 訊號穩定性是必要功課。
-
-Note:
-QRS onset 在 12-lead 上要看最早出現偏離 baseline 的那條 lead，通常用 V1 或 lead II 為基準。
+Position Stability 預設 4 mm 是 hybrid map 成功的關鍵；catheter 不夠穩，sinus location 與 PVC activation 就配不準。
 
 ---
 
-## ⭐ 最重要的數字 · LAT Timing Ruler
+## Activation 找最早 · 重要數字
 
 <img src="assets/diagrams/lat-timing-ruler.svg" alt="LAT timing threshold ruler showing -20, -30, -40 ms zones" />
 
-| Finding | 意義 |
+| Local bipolar EGM 提前 QRS onset | 意義 |
 | --- | --- |
-| local bipolar EGM 提前 QRS onset **20 ms** | 可能接近 |
-| 提前 **30 ms** | 很有意義 |
-| 提前 **40 ms 以上** | **非常可疑 origin** |
-| **unipolar QS pattern** | 支持 focal origin 附近 |
-| local EGM sharp prepotential | fascicular / Purkinje 或特殊 substrate |
+| **20 ms** | 可能接近 |
+| **30 ms** | 很有意義 |
+| **40 ms 以上** | **非常可疑 origin** |
+| 加上 **unipolar QS pattern** | 支持 focal origin |
+| 加上 sharp prepotential | fascicular / Purkinje |
 
-<div class="callout red">
-<span class="label">數字記憶</span>
-<strong>–20 / –30 / –40 ms</strong> · 越早越接近 origin；加上 unipolar QS 才是真正的 sweet spot。
+VPC map 以 **PVC QRS onset = time zero**，找 local EGM 比 QRS onset 早多少 ms。
+
+---
+
+## LAT Hybrid · 實際畫面
+
+<img src="assets/carto/lat-activation-map.png" alt="CARTO 3 LAT Hybrid activation map" />
+<span class="fig-cap">CARTO 3 LAT Hybrid Map · 紅色 = earliest activation（PVC beat 的 LAT）·  catheter 顯示於 sinus rhythm 位置</span>
+
+Note:
+這是真實 LAT Hybrid map — 顏色是 PVC 時的 LAT timing，但每個 point 的幾何位置是該 PVC 前 sinus beat 的位置，避免 PVC 時 catheter 漂移污染 map。
+
+---
+
+## Filters Status · 雙重檢查
+
+<div class="cols image-wide">
+<div>
+
+LAT Hybrid 的 Filters Status bar 同時顯示：
+
+- **PVC filter** 狀態（activation beat）
+- **RS (Real Sinus) filter** 狀態（location beat）
+
+任一 filter 不過 → 該點被丟棄。
+
+點 status box 可在 pattern viewer 看細節。
+
 </div>
+<div>
 
-Note:
-這幾個數字一定要背下來 — 是 LAT Hybrid 判讀的核心 threshold。
+<img src="assets/carto/reference-egm.png" alt="CARTO reference EGM channels" />
+<span class="fig-cap">Reference EGM channels · annotation timing 必須在兩拍都穩定</span>
 
----
-
-## 操作邏輯 · Step 1 只收 target VPC
-
-用 **Pattern Matching** 過濾，避免混入不同 VPC morphology。
-
-```text
-只接受與 target template 高度相似的 PVC beats。
-```
-
-Note:
-這就是為什麼 Pattern Matching 一開始就要開。
-
----
-
-## 操作邏輯 · Step 2 檢查每個點 annotation
-
-CARTO 自動 annotation 很方便，但 **VPC mapping 不能完全盲信**。
-
-每個重要 early point 要看：
-
-```text
-1. bipolar EGM onset
-2. unipolar morphology
-3. 是否為 far-field
-4. catheter contact
-5. 是否同一種 VPC
-6. beat 是否 fusion
-```
-
-<div class="callout red">
-<span class="label">注意</span>
-Auto annotation 有時會把 far-field signal 抓成 local onset；早 30 ms 的點如果是 far-field，會誤導整張 map。
+</div>
 </div>
 
 ---
 
-## 操作邏輯 · Step 3 找 earliest activation
-
-在 LAT map 上尋找最早區域：
-
-```text
-紅色 / earliest color zone
-```
-
-**但不要只看顏色，要看訊號。**
-
-真正好的 target 通常有：
-
-| 條件 | 理想表現 |
-| --- | --- |
-| Bipolar timing | earliest，常 **–20 到 –40 ms** |
-| Unipolar | **QS pattern**，快速下降 |
-| Contact | 穩定 |
-| Pattern matching | 高相似度 |
-| Pace map | **PASO 高分** |
-| Anatomy | 合理且安全 |
-
----
-
-## ✅ Good Activation Target 長怎樣？
+## ✅ Good LAT Hybrid Target 長怎樣？
 
 <div class="cols image-wide">
 <div>
 
 ```text
-PVC morphology = target VPC
-Local bipolar EGM = earliest
-Local timing = -35 ms before QRS onset
-Unipolar = QS with steep initial negative deflection
+PVC morphology = target VPC template
+NSR location stable (Position Stability passed)
+Local bipolar EGM = earliest (–35 ms)
+Unipolar QS · steep negative deflection
 PASO = 92%
 Anatomy = RVOT septal site
 ```
 
 <div class="callout orange">
-<span class="label">六項齊全</span>
-這就是很漂亮的 ablation target — confident 燒下去。
+六項齊全 → confident ablation target
 </div>
 
 </div>
 <div>
 
-<img src="assets/carto/egm-timing-annotation.png" alt="CARTO EGM with timing annotation showing local bipolar timing" />
-<span class="fig-cap">EGM annotation view · LAT 65 ms · CL 242 · 多通道對齊比較</span>
+<img src="assets/carto/egm-timing-annotation.png" alt="EGM with timing annotation" />
+<span class="fig-cap">EGM timing 視窗 · LAT 65 ms · 多通道對齊</span>
 
 </div>
 </div>
-
-Note:
-–35 ms、PASO 92%、unipolar QS — 這組數字是教科書級的完美 target。
 
 ---
 
-## ❌ Bad Activation Point 長怎樣？
+## ❌ 不可信的點
 
 ```text
-LAT 很早，但：
-- beat morphology 不像 target PVC
-- EGM 很鈍，像 far-field
-- catheter contact 不穩
-- unipolar 不是 QS
-- 點位孤立，周圍沒有 early zone
+LAT 看起來很早，但：
+- beat morphology 不像 target PVC      (PVC filter fail)
+- 該點沒有對應的 sinus location         (Non-Hybrid Point)
+- EGM 鈍、像 far-field
+- catheter contact 不穩 / Position Stability fail
+- 點位孤立，周圍沒有 early zone gradient
 ```
 
 <div class="callout red">
-<span class="label">不要急著燒</span>
-這種點先確認 — 通常是 fusion beat、far-field、或不同 morphology 的 VPC 被誤收。
-</div>
-
-Note:
-「點位孤立、周圍沒有 early zone」是很重要的提示 — 真 origin 周圍應該有梯度，孤點通常是 artifact。
-
----
-
-## 🎯 LAT Hybrid · 一句話
-
-<div class="callout gold">
-<span class="label">記憶點</span>
-LAT Hybrid = <strong>找最早</strong>。<br/>
-但「最早 ≠ 一定是 origin」 — 要配 unipolar QS、好 contact、Pattern Matching 確認，才能下手。
+Non-Hybrid Point 與孤立 early point 都要先驗證再下手，不要被「紅色」誤導。
 </div>

@@ -62,29 +62,5 @@ Note:
 
 ---
 
-## 🎯 During Ablation · 決策邏輯
-
-<div class="cols">
-<div>
-
-### 看到好反應
-- 繼續完成 lesion
-- 觀察 PVC suppression
-- 準備 post-ablation wait
-
-</div>
-<div>
-
-### 看到壞反應
-- **PVC 沒變** → 重新檢查 target
-- **Morphology 改變** → 可能多 focus
-- **Conduction change** → **停手**
-- **ST change** → **停手 + 評估 coronary**
-
-</div>
-</div>
-
-<div class="callout">
-<span class="label">關鍵</span>
-RF 不是「按下去就好」，而是<strong>「看著 EGM 與 EKG 即時做判斷」</strong>。
-</div>
+Note:
+RF 不是「按下去就好」 — 而是看著 EGM 與 EKG 即時判斷。好反應 → 完成 lesion 後進入 post-ablation wait；壞反應 → PVC 沒變重新檢查 target、morphology 改變可能多 focus、conduction 或 ST change 立即停手。

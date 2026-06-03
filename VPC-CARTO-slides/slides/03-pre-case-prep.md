@@ -11,15 +11,6 @@ Note:
 
 ---
 
-## Overall Workflow Map
-
-<img src="assets/diagrams/workflow-flow.svg" alt="VPC ablation overall workflow with CARTO 3 modules at each step" />
-
-Note:
-這張圖是貫穿整個 case 的骨幹，後面所有章節都在解釋其中一步。橘色 = Pattern Matching / APB，紅色 = LAT Hybrid，紫色 = PASO。
-
----
-
 ## 12-lead EKG 預判 origin
 
 進 lab 前先看 VPC morphology：

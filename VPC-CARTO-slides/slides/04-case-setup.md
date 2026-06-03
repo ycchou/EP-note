@@ -78,13 +78,5 @@ ICE 在 papillary muscle / LVOT case 幾乎是必備；如果懷疑 LV summit，
 
 ---
 
-## 🎯 Setup 的核心邏輯
-
-<div class="callout red">
-<span class="label">Operator 思維</span>
-Setup 階段的每個決定都來自 <strong>pre-case 預判的 origin</strong>。
-預判越準 → setup 越精準 → mapping 越省時間。
-</div>
-
 Note:
-這就是為什麼前一張的 12-lead 預判很關鍵 — 它決定了 setup 階段所有 catheter 選擇。
+Setup 階段的每個決定（mapping chamber、catheter 配置、要不要 ICE）都來自 pre-case 預判的 origin。預判越準 → setup 越精準 → mapping 越省時間。

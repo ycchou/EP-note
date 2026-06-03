@@ -6,7 +6,7 @@
 
 <span class="pill pill-pm">CARTO Module 1 / 4</span>
 
-<div class="subtitle">鎖定 target VPC morphology · 確保「每一拍都是同一顆」</div>
+<div class="subtitle">以 12-lead morphology 即時辨識 target VPC · 確保 mapping points 來自同一型態</div>
 
 Note:
 Pattern Matching 是四大模組中最早開、最常用的。整個 case 都靠它把「目標 VPC」和「其他 VPC / fusion beat」分開。
@@ -119,44 +119,14 @@ Note:
 
 ---
 
-## 臨床重點 · 沒有 Pattern Matching 會發生什麼？
+## 沒有 Pattern Matching 會發生什麼？
 
 <div class="callout red">
 <span class="label">災難情境</span>
-你以為你在 map 同一顆 VPC，<br/>
-其實中間混進不同 origin 的 VPC，<br/>
-最後 LAT map 會變亂。
+你以為你在 map 同一顆 VPC，其實中間混進不同 origin 的 VPC，最後 LAT map 變亂、earliest point 不可信、找錯 origin、燒了沒效果。
 </div>
 
-<div class="cols">
-<div>
-
-### 結果
-- earliest point 不可信
-- 找錯 origin
-- 燒了沒效果
-- Case 時間拉長
-
-</div>
-<div>
-
-### 解法
-- baseline 就開 Pattern Matching
-- 收點時看 similarity
-- 不確定就先停手
-
-</div>
-</div>
-
----
-
-## 🎯 Pattern Matching · 一句話
-
-<div class="callout">
-<span class="label">記憶點</span>
-Pattern Matching = <strong>VPC 過濾器</strong>。<br/>
-它確保 LAT map 上每一個點都是 target VPC，避免「混拍」毀掉整張 map。
-</div>
+**解法**：baseline 就開 Pattern Matching，收點時看 similarity（建議門檻 ≥ 90%），不確定就先停手驗證。
 
 Note:
-下一個模組 Auto Pattern Bank 是 Pattern Matching 的好搭檔 — Pattern Matching 過濾單一 target，APB 自動分類所有 morphology。
+下一個模組 Auto Pattern Bank 是 Pattern Matching 的好搭檔 — PM 過濾單一 target，APB 自動分類所有 morphology。

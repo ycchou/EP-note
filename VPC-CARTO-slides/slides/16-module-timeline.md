@@ -31,22 +31,16 @@ Note:
 
 ---
 
-## 四個模組角色一覽
-
-<img src="assets/diagrams/module-quadrant.svg" alt="Four CARTO modules quadrant" />
-
----
-
-## 四個模組的時間軸視覺化
+## 四個模組各自的時間軸
 
 <div class="cols">
 <div>
 
 ### <span class="pill pill-pm">Pattern Matching</span>
-**全程開啟** · 從 baseline 到 post-ablation 一路用
+**全程開啟** · baseline → mapping → post-ablation
 
 ### <span class="pill pill-apb">Auto Pattern Bank</span>
-**頭尾各一次** · Baseline 分類、術後驗證
+**頭尾各一次** · Baseline 分類 / 術後驗證新型態
 
 </div>
 <div>
@@ -55,24 +49,11 @@ Note:
 **Mid-case 主力** · Target 鎖定後到 RF 前
 
 ### <span class="pill pill-paso">PASO</span>
-**穿插使用** · Sparse PVC / pre-ablation confirm
+**穿插使用** · Sparse PVC 主導 / pre-ablation confirm
 
 </div>
 </div>
-
-<div class="callout">
-<span class="label">Operator 直覺</span>
-四個模組不是「擇一使用」，而是<strong>「各司其職、貫穿全 case」</strong>。
-</div>
-
----
-
-## 🎯 一句話總結
 
 <div class="callout red">
-<span class="label">記憶口訣</span>
-<strong>Baseline 用 APB 分類，全程用 Pattern Matching 過濾，<br/>
-Mid-case 用 LAT 找最早，PASO 確認像不像，<br/>
-RF 前最後 LAT + PASO 雙確認，<br/>
-RF 後用 Pattern Matching + APB 驗證消失。</strong>
+四個模組不是「擇一使用」 — 而是各司其職、貫穿全 case。
 </div>

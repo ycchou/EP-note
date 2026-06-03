@@ -43,34 +43,5 @@ bigeminy / trigeminy 的 PVC 因為與 sinus beat 交替，annotation 容易把 
 
 ---
 
-## 🎯 Baseline 觀察的核心價值
-
-<div class="callout gold">
-<span class="label">關鍵</span>
-在你接上第一根 catheter 之前，<strong>先用 5–10 分鐘看清楚 EKG 與 VPC</strong>。
-這比急著 mapping 重要 100 倍。
-</div>
-
-<div class="cols">
-<div>
-
-### 觀察到 frequent monomorphic
-→ 直接走 LAT Hybrid
-
-### 觀察到 infrequent
-→ 心理準備 PASO + induction
-
-</div>
-<div>
-
-### 觀察到 multi-morphology
-→ 開 Auto Pattern Bank
-
-### 觀察到 sedation 後消失
-→ 先停 sedation、用 iso
-
-</div>
-</div>
-
 Note:
-這張投影片之後，我們就要進入四大模組的核心。
+進入四大模組前的最後一張 — 先花 5–10 分鐘看清楚 EKG 與 VPC，比急著 mapping 重要太多。觀察到 frequent monomorphic 走 LAT Hybrid；infrequent 走 PASO + induction；multi-morphology 先開 APB；sedation 抑制就停 sedation + iso。

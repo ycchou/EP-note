@@ -103,37 +103,11 @@ Note:
 
 ## 實戰用法 · 三步驟
 
-### Step A · 先讓 Auto Pattern Bank 收集
-
-病人進 lab 後，先觀察幾分鐘。
-
-```text
-讓系統自動記錄 PVC morphology。
-```
-
-### Step B · 選 clinical VPC
-
-依照：
-1. 術前 12-lead ECG
-2. **Holter dominant morphology**
-3. 病人症狀發生時的 VPC
-4. lab 中最常出現的 morphology
-
-決定要打哪一顆。
-
-### Step C · 把 clinical VPC 設成 target
-
-選定後，用 **Pattern Matching** 鎖定這個 morphology。
-
-Note:
-Step B 是判斷力最關鍵的一步 — 不能只看 lab 裡多的那一型，要回到 Holter 看「真正讓病人症狀的那一型」。
-
----
-
-## 🎯 Auto Pattern Bank · 一句話
+1. **Baseline 觀察幾分鐘** → 讓 APB 自動收集 PVC morphology
+2. **選 clinical VPC** → 依術前 12-lead、Holter dominant、病人症狀時的 VPC、lab 最常出現型態決定要打哪一型
+3. **設成 target** → 用 Pattern Matching 鎖定該 morphology
 
 <div class="callout gold">
-<span class="label">記憶點</span>
-APB = <strong>VPC 自動分類器</strong>。<br/>
-讓你在多 morphology case 中，不漏掉任何一型，並選對 clinical target 給 Pattern Matching 鎖定。
+<span class="label">關鍵</span>
+不能只看 lab 裡多的那一型，要回到 Holter 看「真正讓病人症狀的那一型」 — 那才是 clinical target。
 </div>

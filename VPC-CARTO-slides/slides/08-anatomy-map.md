@@ -57,32 +57,5 @@ Note:
 
 ---
 
-## 🎯 Anatomy 的核心邏輯
-
-<div class="callout">
-<span class="label">Operator 思維</span>
-Anatomy 不是「越完整越好」，而是<strong>「夠用就好、要的都要」</strong>。<br/>
-LV summit case 一定要 LVOT + cusp + CS + GCV / AIV 全部建；RVOT 單純 case 不用浪費時間進 LV。
-</div>
-
-<div class="cols">
-<div>
-
-### 多建一塊的成本
-- 額外 LV access 風險
-- Case 時間拉長
-- Heparin / contrast 暴露
-
-</div>
-<div>
-
-### 少建一塊的成本
-- 找不到真正 origin
-- 整個 case 白費
-- 病人需要 redo
-
-</div>
-</div>
-
 Note:
-LV summit 是最容易「少建一塊就找不到」的 case — 後面 scenario 會詳細討論。
+Anatomy 不是「越完整越好」，而是「夠用就好、要的都要」 — LV summit case 一定要 LVOT + cusp + CS + GCV / AIV 全部建；RVOT 單純 case 不用浪費時間進 LV。多建一塊的成本是 access 風險與時間；少建一塊的成本是整個 case 白費。LV summit 最容易少建一塊就找不到 origin。

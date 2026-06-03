@@ -56,48 +56,5 @@ Note:
 
 ---
 
-## 各情境深入解讀
-
-<div class="cols">
-<div>
-
-### LAT 早但 PASO 低
-- Catheter 沒貼好？
-- Pacing output 不對？
-- Far-field 被誤抓？
-- Intramural origin？
-
-### LAT 不夠早但 PASO 高
-- 你在 **exit site**
-- 真 origin 在更深處
-- 沿著 activation 梯度往早處找
-
-</div>
-<div>
-
-### 多處 PASO 高
-- Broad breakout
-- Intramural origin (LV summit)
-- 需要 multi-chamber
-
-### PASO 高卻燒不掉
-- 別只燒同一處
-- 換 chamber：cusp / CS / 對側
-- 考慮 epicardial
-
-</div>
-</div>
-
----
-
-## 🎯 LAT + PASO · 一句話
-
-<div class="callout red">
-<span class="label">核心邏輯</span>
-LAT 告訴你<strong>「電氣從哪冒出來」</strong>，PASO 告訴你<strong>「pacing 像不像」</strong>。<br/>
-兩者一致 → 燒。<br/>
-兩者不一致 → 先想為什麼，再決定要不要燒。
-</div>
-
 Note:
-這是整個 workflow 的「最後確認」 — 進入 Part V Ablation 之前的最後 checkpoint。
+LAT 告訴你「電氣從哪冒出來」，PASO 告訴你「pacing 像不像」。兩者一致 → 燒；不一致 → 先想為什麼。這是進入 Part V Ablation 前的最後 checkpoint。
