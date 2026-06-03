@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" font-family="'Inter','Noto Sans TC',sans-serif">
+  <defs>
+    <marker id="et-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#F39200"/>
+    </marker>
+    <marker id="et-arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#16B8C7"/>
+    </marker>
+    <marker id="et-arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#FB7185"/>
+    </marker>
+    <radialGradient id="body-grad" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#1f2d4f"/>
+      <stop offset="1" stop-color="#0b1428"/>
+    </radialGradient>
+  </defs>
+
+  <text x="450" y="38" fill="#fff" font-weight="800" font-size="24" text-anchor="middle">Einthoven's Triangle</text>
+  <text x="450" y="62" fill="#7A8499" font-size="13" text-anchor="middle">三個肢體導程的向量基礎 · Lead I / II / III</text>
+
+  <!-- Body silhouette (simplified) -->
+  <ellipse cx="450" cy="370" rx="260" ry="200" fill="url(#body-grad)" stroke="#3A4A5C" stroke-width="1.5"/>
+
+  <!-- Heart marker at center -->
+  <g transform="translate(450,350)">
+    <text x="0" y="0" font-size="28" text-anchor="middle">❤</text>
+  </g>
+
+  <!-- Triangle vertices (electrodes) -->
+  <!-- RA top-left, LA top-right, LL bottom-center -->
+  <g>
+    <circle cx="240" cy="230" r="22" fill="#16223D" stroke="#FFD166" stroke-width="3"/>
+    <text x="240" y="237" fill="#FFD166" font-weight="800" font-size="14" text-anchor="middle">RA</text>
+    <text x="240" y="200" fill="#FFD166" font-size="11" text-anchor="middle">右手</text>
+
+    <circle cx="660" cy="230" r="22" fill="#16223D" stroke="#FFD166" stroke-width="3"/>
+    <text x="660" y="237" fill="#FFD166" font-weight="800" font-size="14" text-anchor="middle">LA</text>
+    <text x="660" y="200" fill="#FFD166" font-size="11" text-anchor="middle">左手</text>
+
+    <circle cx="450" cy="540" r="22" fill="#16223D" stroke="#FFD166" stroke-width="3"/>
+    <text x="450" y="547" fill="#FFD166" font-weight="800" font-size="14" text-anchor="middle">LL</text>
+    <text x="450" y="582" fill="#FFD166" font-size="11" text-anchor="middle">左腳</text>
+  </g>
+
+  <!-- Triangle sides as lead vectors -->
+  <!-- Lead I: RA → LA (right to left, horizontal) -->
+  <line x1="262" y1="230" x2="638" y2="230" stroke="#F39200" stroke-width="4" marker-end="url(#et-arr)"/>
+  <g transform="translate(450,210)">
+    <rect x="-50" y="-22" width="100" height="32" rx="6" fill="#F39200"/>
+    <text x="0" y="-2" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead I</text>
+    <text x="0" y="14" fill="#0B1E3F" font-size="10" font-weight="600" text-anchor="middle">0°  · 右→左</text>
+  </g>
+
+  <!-- Lead II: RA → LL -->
+  <line x1="256" y1="248" x2="437" y2="525" stroke="#16B8C7" stroke-width="4" marker-end="url(#et-arr2)"/>
+  <g transform="translate(305,420) rotate(56)">
+    <rect x="-55" y="-15" width="110" height="32" rx="6" fill="#16B8C7"/>
+    <text x="0" y="6" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead II</text>
+    <text x="0" y="22" fill="#0B1E3F" font-size="10" font-weight="600" text-anchor="middle">+60° · 右→腳</text>
+  </g>
+
+  <!-- Lead III: LA → LL -->
+  <line x1="644" y1="248" x2="463" y2="525" stroke="#FB7185" stroke-width="4" marker-end="url(#et-arr3)"/>
+  <g transform="translate(595,420) rotate(-56)">
+    <rect x="-55" y="-15" width="110" height="32" rx="6" fill="#FB7185"/>
+    <text x="0" y="6" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead III</text>
+    <text x="0" y="22" fill="#0B1E3F" font-size="10" font-weight="600" text-anchor="middle">+120° · 左→腳</text>
+  </g>
+
+  <!-- Einthoven's law equation -->
+  <g transform="translate(70,560)">
+    <text x="0" y="0" fill="#7A8499" font-size="12" font-weight="600">Einthoven's Law:</text>
+    <text x="0" y="22" fill="#fff" font-size="15" font-family="'JetBrains Mono', monospace">Lead I + Lead III = Lead II</text>
+  </g>
+</svg>

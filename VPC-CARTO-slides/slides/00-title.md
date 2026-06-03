@@ -34,6 +34,7 @@ Note:
 <div>
 
 ### Part I · EKG 判讀基礎
+- 12-Lead ECG 向量基礎（Einthoven）
 - VPC Origin 三步驟
 - Transition Zone
 

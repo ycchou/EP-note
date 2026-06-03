@@ -91,19 +91,29 @@ Position Stability 預設 4 mm 是 hybrid map 成功的關鍵；catheter 不夠�
 
 ---
 
-## Activation 找最早 · 重要數字
+## ⭐ Bipolar EGM 提前 QRS Onset · 視覺化
 
-<img src="assets/diagrams/lat-timing-ruler.svg" alt="LAT timing threshold ruler showing -20, -30, -40 ms zones" />
+<img src="assets/diagrams/lat-timing-ruler.svg" alt="LAT timing threshold ruler showing -20, -30, -40 ms zones" class="svg-fit" />
+
+VPC map 以 **PVC QRS onset = time zero**，找 local EGM 比 QRS onset 早多少 ms。
+
+---
+
+<!-- .slide: class="v-center" -->
+
+## 數字門檻 + 加分條件
 
 | Local bipolar EGM 提前 QRS onset | 意義 |
 | --- | --- |
 | **20 ms** | 可能接近 |
 | **30 ms** | 很有意義 |
 | **40 ms 以上** | **非常可疑 origin** |
-| 加上 **unipolar QS pattern** | 支持 focal origin |
-| 加上 sharp prepotential | fascicular / Purkinje |
+| 加上 **unipolar QS pattern** | 支持 focal origin（快速 negative deflection） |
+| 加上 sharp prepotential | fascicular / Purkinje origin |
 
-VPC map 以 **PVC QRS onset = time zero**，找 local EGM 比 QRS onset 早多少 ms。
+<div class="callout orange">
+記憶口訣：<strong>–20 / –30 / –40 ms 三段</strong>。但「最早 ≠ 一定是 origin」 — 一定要看 unipolar QS、contact、Pattern Matching 是否同時成立。
+</div>
 
 ---
 

@@ -51,11 +51,31 @@ Redo case 最常見的情境就是「上次燒掉一顆，又長出新的一顆�
 
 ## Auto Pattern Bank · 實際畫面
 
-<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" />
-<span class="fig-cap">CARTO 3 Auto Pattern Bank · 自動把這個 case 的 VPC 分成 6 種 pattern，並標示 burden 與 cycle length</span>
+<div class="cols image-wide">
+<div>
+
+<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" style="max-height:60vh;" />
+
+</div>
+<div>
+
+### 怎麼讀這張畫面
+
+- **Pattern 1 (PVC, 547 beats)** — 主要 morphology
+- **Pattern 2 / 3** — 次要 morphology (160 / 79 beats)
+- **Pattern 4–6** — 偶發 morphology
+- 下方 Cycle Length 與 burden 並排顯示
+
+<div class="callout orange">
+<span class="label">Operator 判斷</span>
+看一眼就知道：(1) 病人有幾型 (2) 哪一型最多 (3) 應該鎖定哪一型當 target。
+</div>
+
+</div>
+</div>
 
 Note:
-這張是真實 CARTO 畫面 — Pattern 1 (PVC, 547 beats) 是主要 morphology, 其他 Pattern 2–6 是不同的 PVC type。Operator 看完這張就知道：(1) 病人有幾型 (2) 哪一型最多 (3) 應該打哪一型。
+這張是真實 CARTO 畫面 — Pattern 1 (547 beats) 是主要 morphology。Operator 通常把這型設為 clinical target；其餘 morphology 暫時不收進 LAT map。
 
 ### 範例
 

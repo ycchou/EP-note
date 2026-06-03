@@ -1,6 +1,6 @@
 <!-- .slide: class="section-title" -->
 
-<div class="part-no">PART I · 01</div>
+<div class="part-no">PART I · 02</div>
 
 # VPC Origin 三步驟
 
@@ -128,10 +128,50 @@ Note:
 
 ## Step 3 · Lead I 細分 Septal vs Free wall
 
-<img src="assets/diagrams/lead1-septal-freewall.svg" alt="Lead I septal vs free wall vector explanation" class="svg-fit" />
+<div class="cols image-text">
+<div>
+
+<div class="lead1-diagram">
+  <div class="lead1-vector">Lead I · 右 → 左</div>
+
+  <div class="lead1-heart">
+    <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="160" cy="100" rx="140" ry="80" fill="rgba(58,74,92,0.45)" stroke="#7A8499" stroke-width="1.5"/>
+      <line x1="160" y1="28" x2="160" y2="172" stroke="#F39200" stroke-width="2.5" stroke-dasharray="6 4"/>
+    </svg>
+
+    <span class="lead1-side-label rv">RV</span>
+    <span class="lead1-side-label lv">LV</span>
+    <span class="lead1-side-label septum">IV septum</span>
+
+    <span class="lead1-marker septal"><span class="dot"></span>Septal origin</span>
+    <span class="lead1-arrow septal-arrow"></span>
+
+    <span class="lead1-marker freewall"><span class="dot"></span>Free wall origin</span>
+    <span class="lead1-arrow freewall-arrow"></span>
+  </div>
+</div>
+
+</div>
+<div>
+
+<div class="callout orange">
+<span class="label">Lead I 正向 → Septal site</span>
+向量朝向 Lead I（右 → 左）<br/>
+通常 ablation 較安全有效
+</div>
+
+<div class="callout red">
+<span class="label">Lead I 負向 / QS → Free wall</span>
+向量遠離 Lead I（外側 → 內側）<br/>
+要小心 perforation 與 catheter contact
+</div>
+
+</div>
+</div>
 
 Note:
-Septal site 通常 ablation 較安全有效；free wall 要小心 perforation 與 catheter contact。
+這張改用 HTML 元素佈局，避免 SVG 內文字疊圖。橘色點是 septal origin，向量箭頭朝 Lead I 方向；紅色點是 free wall origin，向量遠離 Lead I。
 
 ---
 
