@@ -54,39 +54,25 @@ Redo case 最常見的情境就是「上次燒掉一顆，又長出新的一顆�
 <div class="cols image-wide">
 <div>
 
-<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" />
+<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" style="max-height:340px;" />
 
 </div>
 <div>
 
-### 怎麼讀這張畫面
-
-- **Pattern 1 (PVC, 547 beats)** — 主要 morphology
-- **Pattern 2 / 3** — 次要 morphology (160 / 79 beats)
-- **Pattern 4–6** — 偶發 morphology
-- 下方 Cycle Length 與 burden 並排顯示
+- **Pattern 1 (547 beats)** — 主要 morphology
+- **Pattern 2 / 3** (160 / 79) — 次要
+- **Pattern 4–6** — 偶發
+- 下方 Cycle Length / burden 並排
 
 <div class="callout orange">
-<span class="label">Operator 判斷</span>
-看一眼就知道：(1) 病人有幾型 (2) 哪一型最多 (3) 應該鎖定哪一型當 target。
+看一眼知道：病人有幾型、哪型最多、該鎖定哪型當 target。
 </div>
 
 </div>
 </div>
 
 Note:
-這張是真實 CARTO 畫面 — Pattern 1 (547 beats) 是主要 morphology。Operator 通常把這型設為 clinical target；其餘 morphology 暫時不收進 LAT map。
-
-### 範例
-
-| Pattern | Surface ECG | 可能意義 |
-| --- | --- | --- |
-| **Pattern 1** | LBBB / inferior axis | RVOT VPC |
-| **Pattern 2** | RBBB / superior axis | LV inferior VPC |
-| **Pattern 3** | LBBB / normal axis | para-Hisian or RV septal |
-
-Note:
-這張表很實用 — APB 分類後，你看 morphology 就能直接套用 Part 1 學的 origin 判讀。
+Pattern 1 設為 clinical target；其餘 morphology 暫時不收進 LAT map。範例對照：Pattern 1 (LBBB/inferior) ≈ RVOT VPC；Pattern 2 (RBBB/superior) ≈ LV inferior；Pattern 3 (LBBB/normal axis) ≈ para-Hisian / RV septal。
 
 ---
 

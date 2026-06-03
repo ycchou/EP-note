@@ -52,7 +52,7 @@ PASO 比較的是「人造的這拍」和「自然的這拍」 morphology — �
 
 ## ⭐ PASO 高分代表什麼？
 
-<img src="assets/diagrams/paso-similarity.svg" alt="PASO similarity bar with 4 zones and lead-by-lead refinement guide" />
+<img src="assets/diagrams/paso-similarity.svg" alt="PASO similarity bar with 4 zones" style="max-height:200px;" />
 
 | PASO similarity | 解讀 |
 | --- | --- |

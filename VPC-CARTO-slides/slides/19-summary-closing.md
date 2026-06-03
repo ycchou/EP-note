@@ -13,14 +13,15 @@ Note:
 
 ## ⭐ 四個模組怎麼用？
 
-<img src="assets/diagrams/module-quadrant.svg" alt="4 CARTO modules quadrant overview" />
-
 | 模組 | 最適合使用時間 | 主要目的 |
 | --- | --- | --- |
 | <span class="pill pill-pm">Pattern Matching</span> | case 一開始、mapping 中、ablation 後 | 鎖定 target VPC，不要收錯 morphology |
 | <span class="pill pill-apb">Auto Pattern Bank</span> | baseline、多型態、術後 | 自動分類不同 PVC morphology |
 | <span class="pill pill-lat">LAT Hybrid</span> | target morphology 確認後 | activation mapping，找 earliest site |
 | <span class="pill pill-paso">PASO</span> | activation 後確認、PVC 少時、術前確認 | pace mapping，比較 paced QRS 和 clinical PVC |
+
+Note:
+這張表搭配前面 Module Quadrant 的視覺已足夠 — 不再重複貼圖。記住四個模組各司其職、貫穿全 case：PM 全程過濾、APB 頭尾分類、LAT 中段找最早、PASO 確認像不像。
 
 ---
 
