@@ -14,35 +14,30 @@ Note:
 ## ⭐ 四個模組怎麼用？
 
 <div class="module-quadrant">
-
 <div class="m-card pm">
-  <span class="m-tag">CARTO Module · PM</span>
-  <h3>Pattern Matching</h3>
-  <div class="m-when">case 一開始 → mapping 中 → ablation 後</div>
-  <div class="m-purpose">VPC 過濾器 · 鎖定 target morphology，避免收錯 morphology</div>
+<span class="m-tag">CARTO Module · PM</span>
+<h3>Pattern Matching</h3>
+<div class="m-when">case 一開始 → mapping 中 → ablation 後</div>
+<div class="m-purpose">VPC 過濾器 · 鎖定 target morphology，避免收錯 morphology</div>
 </div>
-
 <div class="m-card apb">
-  <span class="m-tag">CARTO Module · APB</span>
-  <h3>Auto Pattern Bank</h3>
-  <div class="m-when">baseline · 多型態 · 術後</div>
-  <div class="m-purpose">VPC 自動分類器 · 分清楚多種 PVC morphology</div>
+<span class="m-tag">CARTO Module · APB</span>
+<h3>Auto Pattern Bank</h3>
+<div class="m-when">baseline · 多型態 · 術後</div>
+<div class="m-purpose">VPC 自動分類器 · 分清楚多種 PVC morphology</div>
 </div>
-
 <div class="m-card lat">
-  <span class="m-tag">CARTO Module · LAT</span>
-  <h3>LAT Hybrid</h3>
-  <div class="m-when">target morphology 確認後</div>
-  <div class="m-purpose">Activation Mapping · 找 earliest activation site</div>
+<span class="m-tag">CARTO Module · LAT</span>
+<h3>LAT Hybrid</h3>
+<div class="m-when">target morphology 確認後</div>
+<div class="m-purpose">Activation Mapping · 找 earliest activation site</div>
 </div>
-
 <div class="m-card paso">
-  <span class="m-tag">CARTO Module · PASO</span>
-  <h3>PASO</h3>
-  <div class="m-when">Activation 後確認 · PVC 少時 · 術前確認</div>
-  <div class="m-purpose">Pace Mapping · 比較 paced QRS vs clinical PVC</div>
+<span class="m-tag">CARTO Module · PASO</span>
+<h3>PASO</h3>
+<div class="m-when">Activation 後確認 · PVC 少時 · 術前確認</div>
+<div class="m-purpose">Pace Mapping · 比較 paced QRS vs clinical PVC</div>
 </div>
-
 </div>
 
 <div class="success-formula">
