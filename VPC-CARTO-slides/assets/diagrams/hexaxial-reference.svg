@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Inter','Noto Sans TC',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="'Inter','Noto Sans TC',sans-serif">
   <defs>
     <marker id="hx-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
       <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
@@ -8,64 +8,60 @@
   <text x="450" y="38" fill="#fff" font-weight="800" font-size="24" text-anchor="middle">Hexaxial Reference · 六軸參考</text>
   <text x="450" y="62" fill="#7A8499" font-size="13" text-anchor="middle">6 個肢體導程 + augmented leads (aVR / aVL / aVF) · 全部 30° 一格</text>
 
-  <g transform="translate(450,340)">
+  <g transform="translate(450,320)">
     <!-- Reference grid circle -->
-    <circle r="220" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-    <circle r="160" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <circle r="200" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <circle r="150" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
 
-    <!-- 30 degree tick marks -->
+    <!-- 30 degree tick marks (extend through center) -->
     <g stroke="rgba(255,255,255,0.12)" stroke-width="1">
-      <line x1="-235" y1="0" x2="235" y2="0"/>
-      <line x1="-204" y1="-118" x2="204" y2="118"/>
-      <line x1="-204" y1="118" x2="204" y2="-118"/>
-      <line x1="-118" y1="-204" x2="118" y2="204"/>
-      <line x1="-118" y1="204" x2="118" y2="-204"/>
-      <line x1="0" y1="-235" x2="0" y2="235"/>
+      <line x1="-215" y1="0" x2="215" y2="0"/>
+      <line x1="-186" y1="-107" x2="186" y2="107"/>
+      <line x1="-186" y1="107" x2="186" y2="-107"/>
+      <line x1="-107" y1="-186" x2="107" y2="186"/>
+      <line x1="-107" y1="186" x2="107" y2="-186"/>
+      <line x1="0" y1="-215" x2="0" y2="215"/>
     </g>
 
     <!-- Heart center -->
     <circle r="10" fill="#C8102E"/>
 
-    <!-- Lead vectors. Each lead points OUT from center -->
-    <!-- Lead I: 0° -->
-    <g color="#F39200">
-      <line x1="0" y1="0" x2="200" y2="0" stroke="#F39200" stroke-width="3.5" marker-end="url(#hx-arr)"/>
-      <text x="225" y="6" fill="#F39200" font-weight="800" font-size="15">Lead I (0°)</text>
+    <!-- Lead vectors. Each lead points OUT from center; text placed beyond arrow tip -->
+    <!-- Lead I: 0° (East) -->
+    <g>
+      <line x1="0" y1="0" x2="170" y2="0" stroke="#F39200" stroke-width="3.5" marker-end="url(#hx-arr)"/>
+      <text x="195" y="6" fill="#F39200" font-weight="800" font-size="15">Lead I (0°)</text>
     </g>
-    <!-- Lead II: +60° -->
-    <g color="#16B8C7">
-      <line x1="0" y1="0" x2="100" y2="173" stroke="#16B8C7" stroke-width="3.5" marker-end="url(#hx-arr)"/>
-      <text x="118" y="200" fill="#16B8C7" font-weight="800" font-size="15">II (+60°)</text>
+    <!-- Lead II: +60° (SE) -->
+    <g>
+      <line x1="0" y1="0" x2="85" y2="147" stroke="#16B8C7" stroke-width="3.5" marker-end="url(#hx-arr)"/>
+      <text x="98" y="178" fill="#16B8C7" font-weight="800" font-size="15">II (+60°)</text>
     </g>
-    <!-- Lead III: +120° -->
-    <g color="#FB7185">
-      <line x1="0" y1="0" x2="-100" y2="173" stroke="#FB7185" stroke-width="3.5" marker-end="url(#hx-arr)"/>
-      <text x="-200" y="200" fill="#FB7185" font-weight="800" font-size="15">III (+120°)</text>
+    <!-- Lead III: +120° (SW) -->
+    <g>
+      <line x1="0" y1="0" x2="-85" y2="147" stroke="#FB7185" stroke-width="3.5" marker-end="url(#hx-arr)"/>
+      <text x="-185" y="178" fill="#FB7185" font-weight="800" font-size="15">III (+120°)</text>
     </g>
-    <!-- aVR: -150° (210°) -->
-    <g color="#FFD166">
-      <line x1="0" y1="0" x2="-173" y2="-100" stroke="#FFD166" stroke-width="2.5" marker-end="url(#hx-arr)" stroke-dasharray="6 3"/>
-      <text x="-260" y="-95" fill="#FFD166" font-weight="700" font-size="14">aVR (-150°)</text>
+    <!-- aVR: -150° (NW) -->
+    <g>
+      <line x1="0" y1="0" x2="-147" y2="-85" stroke="#FFD166" stroke-width="2.5" marker-end="url(#hx-arr)" stroke-dasharray="6 3"/>
+      <text x="-238" y="-92" fill="#FFD166" font-weight="700" font-size="14">aVR (-150°)</text>
     </g>
-    <!-- aVL: -30° -->
-    <g color="#7C5CFF">
-      <line x1="0" y1="0" x2="173" y2="-100" stroke="#B4A0FF" stroke-width="2.5" marker-end="url(#hx-arr)" stroke-dasharray="6 3"/>
-      <text x="200" y="-100" fill="#B4A0FF" font-weight="700" font-size="14">aVL (-30°)</text>
+    <!-- aVL: -30° (NE) -->
+    <g>
+      <line x1="0" y1="0" x2="147" y2="-85" stroke="#B4A0FF" stroke-width="2.5" marker-end="url(#hx-arr)" stroke-dasharray="6 3"/>
+      <text x="172" y="-92" fill="#B4A0FF" font-weight="700" font-size="14">aVL (-30°)</text>
     </g>
-    <!-- aVF: +90° -->
-    <g color="#4ADE80">
-      <line x1="0" y1="0" x2="0" y2="200" stroke="#4ADE80" stroke-width="2.5" marker-end="url(#hx-arr)" stroke-dasharray="6 3"/>
-      <text x="10" y="225" fill="#4ADE80" font-weight="700" font-size="14">aVF (+90°)</text>
+    <!-- aVF: +90° (South) -->
+    <g>
+      <line x1="0" y1="0" x2="0" y2="170" stroke="#4ADE80" stroke-width="2.5" marker-end="url(#hx-arr)" stroke-dasharray="6 3"/>
+      <text x="14" y="200" fill="#4ADE80" font-weight="700" font-size="14">aVF (+90°)</text>
     </g>
-
-    <!-- Top / bottom indicator -->
-    <text x="0" y="-225" fill="#7A8499" font-size="11" text-anchor="middle">上（superior）</text>
-    <text x="0" y="265" fill="#7A8499" font-size="11" text-anchor="middle">下（inferior）</text>
   </g>
 
-  <!-- Bottom note -->
-  <g transform="translate(70,575)">
-    <rect width="760" height="34" rx="8" fill="rgba(243,146,0,0.12)" stroke="#F39200" stroke-width="1.5"/>
-    <text x="380" y="22" fill="#F39200" font-weight="700" font-size="13" text-anchor="middle">下壁導程 II / III / aVF 都朝下 → 它們三個正向 = origin 在心臟「上方」（OT）</text>
+  <!-- Bottom note · pushed below the diagram with safe clearance -->
+  <g transform="translate(70,580)">
+    <rect width="760" height="40" rx="8" fill="rgba(243,146,0,0.12)" stroke="#F39200" stroke-width="1.5"/>
+    <text x="380" y="25" fill="#F39200" font-weight="700" font-size="13" text-anchor="middle">下壁導程 II / III / aVF 都朝下 → 它們三個正向 = origin 在心臟「上方」（OT）</text>
   </g>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="'Inter','Noto Sans TC',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" font-family="'Inter','Noto Sans TC',sans-serif">
   <defs>
     <radialGradient id="thorax" cx="0.5" cy="0.5" r="0.7">
       <stop offset="0" stop-color="#1f2d4f"/>
@@ -12,56 +12,56 @@
   <text x="450" y="38" fill="#fff" font-weight="800" font-size="24" text-anchor="middle">Precordial Leads · 胸前導程 V1–V6</text>
   <text x="450" y="62" fill="#7A8499" font-size="13" text-anchor="middle">水平面導程 · 從右前胸（V1）橫掃到左側胸壁（V6）</text>
 
-  <!-- Horizontal cross-section of thorax -->
-  <g transform="translate(450,330)">
-    <!-- Body outline -->
-    <ellipse cx="0" cy="0" rx="320" ry="170" fill="url(#thorax)" stroke="#3A4A5C" stroke-width="2"/>
+  <!-- Anterior / Posterior labels OUTSIDE the body ellipse -->
+  <text x="450" y="98" fill="#7A8499" font-size="11" text-anchor="middle">前 (Anterior)</text>
 
-    <!-- Spine (back) -->
-    <rect x="-25" y="140" width="50" height="40" fill="#3A4A5C" stroke="#7A8499" stroke-width="1"/>
-    <text x="0" y="200" fill="#7A8499" font-size="11" text-anchor="middle">脊椎 (Posterior)</text>
+  <!-- Horizontal cross-section of thorax -->
+  <g transform="translate(450,300)">
+    <!-- Body outline -->
+    <ellipse cx="0" cy="0" rx="310" ry="165" fill="url(#thorax)" stroke="#3A4A5C" stroke-width="2"/>
 
     <!-- Sternum (front) -->
-    <rect x="-12" y="-180" width="24" height="36" fill="#3A4A5C" stroke="#7A8499" stroke-width="1"/>
-    <text x="0" y="-200" fill="#7A8499" font-size="11" text-anchor="middle">胸骨 (Anterior)</text>
+    <rect x="-12" y="-175" width="24" height="32" fill="#3A4A5C" stroke="#7A8499" stroke-width="1"/>
+    <text x="0" y="-153" fill="#7A8499" font-size="10" text-anchor="middle">胸骨</text>
+
+    <!-- Spine (back) -->
+    <rect x="-25" y="135" width="50" height="36" fill="#3A4A5C" stroke="#7A8499" stroke-width="1"/>
+    <text x="0" y="158" fill="#fff" font-size="10" text-anchor="middle" font-weight="600">脊椎</text>
 
     <!-- Heart shape (offset slightly left and forward) -->
-    <ellipse cx="-30" cy="-30" rx="80" ry="55" fill="#C8102E" opacity="0.35" stroke="#FB7185" stroke-width="1.5"/>
-    <text x="-30" y="-27" fill="#fff" font-weight="700" font-size="13" text-anchor="middle">Heart</text>
+    <ellipse cx="-30" cy="-25" rx="78" ry="52" fill="#C8102E" opacity="0.35" stroke="#FB7185" stroke-width="1.5"/>
+    <text x="-30" y="-21" fill="#fff" font-weight="700" font-size="13" text-anchor="middle">Heart</text>
 
     <!-- IV septum line -->
-    <line x1="-65" y1="-58" x2="20" y2="-2" stroke="#F39200" stroke-width="2" stroke-dasharray="4 3"/>
-    <text x="-50" y="-2" fill="#F39200" font-size="9" font-weight="700">septum</text>
+    <line x1="-65" y1="-55" x2="20" y2="2" stroke="#F39200" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="-50" y="14" fill="#F39200" font-size="9" font-weight="700">septum</text>
 
     <!-- V1-V6 electrode positions (along front-left curve) -->
-    <!-- V1: 4th IC space right of sternum -->
-    <g transform="translate(20,-145)"><circle r="9" fill="#FB7185"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V1</text></g>
-    <!-- V2: 4th IC space left of sternum -->
-    <g transform="translate(-20,-145)"><circle r="9" fill="#FB7185"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V2</text></g>
-    <!-- V3 -->
-    <g transform="translate(-80,-138)"><circle r="9" fill="#F39200"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V3</text></g>
-    <!-- V4 -->
-    <g transform="translate(-148,-115)"><circle r="9" fill="#F39200"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V4</text></g>
-    <!-- V5 -->
-    <g transform="translate(-210,-78)"><circle r="9" fill="#16B8C7"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V5</text></g>
-    <!-- V6 -->
-    <g transform="translate(-258,-22)"><circle r="9" fill="#16B8C7"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V6</text></g>
+    <g transform="translate(20,-140)"><circle r="9" fill="#FB7185"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V1</text></g>
+    <g transform="translate(-20,-140)"><circle r="9" fill="#FB7185"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V2</text></g>
+    <g transform="translate(-80,-133)"><circle r="9" fill="#F39200"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V3</text></g>
+    <g transform="translate(-148,-110)"><circle r="9" fill="#F39200"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V4</text></g>
+    <g transform="translate(-205,-72)"><circle r="9" fill="#16B8C7"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V5</text></g>
+    <g transform="translate(-250,-15)"><circle r="9" fill="#16B8C7"/><text x="0" y="3" fill="#fff" font-weight="800" font-size="11" text-anchor="middle">V6</text></g>
 
-    <!-- Vector arrows: V1 looks toward heart from right -->
-    <line x1="14" y1="-138" x2="-15" y2="-44" stroke="#FB7185" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" marker-end="url(#pl-arr)"/>
-    <line x1="-252" y1="-26" x2="-58" y2="-44" stroke="#16B8C7" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6" marker-end="url(#pl-arr)"/>
+    <!-- Vector arrows: faint dashed lines from V1 / V6 toward heart -->
+    <line x1="14" y1="-133" x2="-15" y2="-44" stroke="#FB7185" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.5" marker-end="url(#pl-arr)"/>
+    <line x1="-244" y1="-19" x2="-58" y2="-44" stroke="#16B8C7" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.5" marker-end="url(#pl-arr)"/>
 
-    <!-- Labels -->
-    <text x="160" y="-130" fill="#FB7185" font-weight="700" font-size="12">「右前」</text>
-    <text x="160" y="-115" fill="#FB7185" font-size="11">看 RVOT 最清楚</text>
-    <text x="-310" y="40" fill="#16B8C7" font-weight="700" font-size="12">「左側」</text>
-    <text x="-310" y="56" fill="#16B8C7" font-size="11">看 LV / LVOT 最清楚</text>
+    <!-- Side labels OUTSIDE the body ellipse (kept clear of all leads / heart) -->
+    <text x="200" y="-100" fill="#FB7185" font-weight="700" font-size="12">「右前」</text>
+    <text x="200" y="-82" fill="#FB7185" font-size="11">看 RVOT 最清楚</text>
+
+    <text x="-296" y="60" fill="#16B8C7" font-weight="700" font-size="12">「左側」</text>
+    <text x="-296" y="78" fill="#16B8C7" font-size="11">看 LV / LVOT 最清楚</text>
   </g>
 
-  <!-- Lower note bar -->
-  <g transform="translate(60,520)">
-    <rect width="780" height="44" rx="8" fill="rgba(22,184,199,0.10)" stroke="#16B8C7" stroke-width="1.5"/>
-    <text x="390" y="20" fill="#16B8C7" font-weight="800" font-size="13" text-anchor="middle">VPC origin localization 在做什麼？</text>
-    <text x="390" y="36" fill="#B8C0D0" font-size="12" text-anchor="middle">看哪幾條胸前導程「正」哪幾條「負」 → 推導出電氣訊號朝向哪 → 反推 origin 在心臟哪一邊</text>
+  <text x="450" y="500" fill="#7A8499" font-size="11" text-anchor="middle">後 (Posterior)</text>
+
+  <!-- Bottom note bar -->
+  <g transform="translate(60,540)">
+    <rect width="780" height="50" rx="8" fill="rgba(22,184,199,0.10)" stroke="#16B8C7" stroke-width="1.5"/>
+    <text x="390" y="22" fill="#16B8C7" font-weight="800" font-size="13" text-anchor="middle">VPC origin localization 在做什麼？</text>
+    <text x="390" y="40" fill="#B8C0D0" font-size="12" text-anchor="middle">看哪幾條胸前導程「正」哪幾條「負」 → 反推 origin 在心臟哪一邊</text>
   </g>
 </svg>
