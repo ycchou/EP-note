@@ -34,6 +34,8 @@ Note:
 
 ---
 
+<!-- .slide: class="v-center" -->
+
 ## Hybrid Point 怎麼運作
 
 <div class="workflow-grid">

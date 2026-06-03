@@ -4,12 +4,46 @@
 
 # Pattern Matching
 
-<span class="pill pill-pm">CARTO Module 1 / 4</span>
+<span class="pill pill-pm">CONFIDENSE™ Acquisition Filter</span>
 
 <div class="subtitle">以 12-lead morphology 即時辨識 target VPC · 確保 mapping points 來自同一型態</div>
 
 Note:
-Pattern Matching 是四大模組中最早開、最常用的。整個 case 都靠它把「目標 VPC」和「其他 VPC / fusion beat」分開。
+Pattern Matching 不是獨立的模組 — 它是 CONFIDENSE™ 模組的其中一個 acquisition filter。下一張說明這個關係。
+
+---
+
+## Pattern Matching 在 CARTO 3 架構中的位置
+
+<div class="callout orange">
+<span class="label">官方定義</span>
+Pattern Matching 是 <strong>CONFIDENSE™ 模組</strong>下的一個 <strong>optional acquisition filter</strong>，用在 <strong>continuous mapping</strong>（連續收點）流程中。它依照 user 預先定義的 surface ECG（或 IC unipolar）pattern，判斷每一拍是否符合，只讓符合的點被收進 map。
+</div>
+
+<div class="cols">
+<div>
+
+### CONFIDENSE™ Continuous Mapping Filters
+- Density（點密度）
+- **Pattern Matching**（形態比對）
+- Position Stability（位置穩定）
+- LAT Stability（LAT 穩定）
+- Cycle Length（週期長度）
+- Respiration Gated（呼吸校正）
+
+</div>
+<div>
+
+### 為什麼是 Filter？
+- 每收一拍，所有開啟的 filter 都要 **同時通過**
+- 任一 filter fail → 該點被丟棄
+- Pattern Matching 是 **morphology gate** — 不像 template 的拍子不收
+
+</div>
+</div>
+
+Note:
+這就是為什麼 Pattern Matching 從 baseline 就要開 — 它是 continuous mapping 的把關者。Filters Status bar 隨時顯示每個 filter 過或不過。
 
 ---
 
@@ -86,6 +120,8 @@ Note:
 </div>
 
 ---
+
+<!-- .slide: class="v-center" -->
 
 ## 操作概念
 

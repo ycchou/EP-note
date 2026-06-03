@@ -58,9 +58,4 @@ ST change（coronary 受傷）、AV conduction change（His 受傷）— 出現�
 </div>
 
 Note:
-這兩個是緊急情況 — ST change 可能 coronary injury，AV change 可能 AV block；不要再「再燒一下試試」。
-
----
-
-Note:
-RF 不是「按下去就好」 — 而是看著 EGM 與 EKG 即時判斷。好反應 → 完成 lesion 後進入 post-ablation wait；壞反應 → PVC 沒變重新檢查 target、morphology 改變可能多 focus、conduction 或 ST change 立即停手。
+這兩個是緊急情況 — ST change 可能 coronary injury，AV change 可能 AV block；不要再「再燒一下試試」。RF 不是「按下去就好」 — 而是看著 EGM 與 EKG 即時判斷：好反應 → 完成 lesion 後進入 post-ablation wait；壞反應 → PVC 沒變重新檢查 target、morphology 改變可能多 focus、conduction 或 ST change 立即停手。

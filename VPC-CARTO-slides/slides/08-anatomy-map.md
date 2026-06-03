@@ -53,9 +53,4 @@ VPC 少的時候要把 anatomy 先做完整 — 因為 PASO 需要好的幾何�
 </div>
 
 Note:
-這張表是 anatomy build 的 checklist。Pre-case 預判幫你知道要建哪幾個 chamber。
-
----
-
-Note:
-Anatomy 不是「越完整越好」，而是「夠用就好、要的都要」 — LV summit case 一定要 LVOT + cusp + CS + GCV / AIV 全部建；RVOT 單純 case 不用浪費時間進 LV。多建一塊的成本是 access 風險與時間；少建一塊的成本是整個 case 白費。LV summit 最容易少建一塊就找不到 origin。
+這張表是 anatomy build 的 checklist — pre-case 預判幫你知道要建哪幾個 chamber。Anatomy 不是「越完整越好」而是「夠用就好、要的都要」。LV summit case 一定要 LVOT + cusp + CS + GCV/AIV 全部建；RVOT 單純 case 不用浪費時間進 LV。多建一塊的成本是 access 風險與時間；少建一塊的成本是整個 case 白費。

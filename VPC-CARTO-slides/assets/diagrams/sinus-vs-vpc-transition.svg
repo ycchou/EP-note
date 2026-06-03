@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" font-family="'Inter','Noto Sans TC',sans-serif">
+  <defs>
+    <linearGradient id="rowBg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#16223D"/>
+      <stop offset="1" stop-color="#0B1E3F"/>
+    </linearGradient>
+  </defs>
+
+  <text x="450" y="36" fill="#fff" font-weight="800" font-size="22" text-anchor="middle">VPC vs Sinus Rhythm · Transition Zone 比較</text>
+  <text x="450" y="56" fill="#7A8499" font-size="12" text-anchor="middle">關鍵不是看絕對位置，是看 VPC 移行帶<strong>相對於病人 sinus</strong>是早還是晚</text>
+
+  <!-- helper for lead labels -->
+  <g font-size="11" fill="#7A8499" font-weight="600" text-anchor="middle">
+    <text x="120" y="100">V1</text>
+    <text x="220" y="100">V2</text>
+    <text x="320" y="100">V3</text>
+    <text x="420" y="100">V4</text>
+    <text x="520" y="100">V5</text>
+    <text x="620" y="100">V6</text>
+  </g>
+
+  <!-- Row 1: Sinus Rhythm row -->
+  <g transform="translate(40,110)">
+    <rect width="820" height="120" rx="12" fill="url(#rowBg)" stroke="#16B8C7" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#16B8C7" font-weight="700" font-size="14">病人 Sinus Rhythm</text>
+    <text x="20" y="46" fill="#7A8499" font-size="11">這個病人天生 transition 在 V4（晚一點點）</text>
+
+    <!-- 6 traces, transitioning at V4 -->
+    <g stroke="#16B8C7" stroke-width="2" fill="none" transform="translate(40,70)">
+      <!-- V1: deep S -->
+      <path d="M0,30 L20,30 L24,28 L28,12 L34,52 L40,30 L70,30"/>
+      <!-- V2: deep S -->
+      <path d="M100,30 L120,30 L124,28 L128,16 L134,50 L140,30 L170,30"/>
+      <!-- V3: medium S -->
+      <path d="M200,30 L220,30 L224,28 L228,18 L234,46 L240,30 L270,30"/>
+      <!-- V4: transition (R=S) -->
+      <path d="M300,30 L320,30 L324,28 L328,18 L334,42 L340,30 L370,30" stroke="#FFD166" stroke-width="2.5"/>
+      <!-- V5: R prominent -->
+      <path d="M400,30 L420,30 L424,28 L428,4 L434,32 L440,30 L470,30"/>
+      <!-- V6: R prominent -->
+      <path d="M500,30 L520,30 L524,28 L528,4 L534,34 L540,30 L570,30"/>
+    </g>
+    <!-- circled transition marker on V4 -->
+    <circle cx="460" cy="180" r="22" fill="none" stroke="#FFD166" stroke-width="2.5" stroke-dasharray="4 3"/>
+    <text x="460" y="220" fill="#FFD166" font-weight="700" font-size="12" text-anchor="middle">sinus 在 V4 轉正</text>
+  </g>
+
+  <!-- Row 2: VPC same patient row -->
+  <g transform="translate(40,260)">
+    <rect width="820" height="120" rx="12" fill="url(#rowBg)" stroke="#F39200" stroke-width="1.5"/>
+    <text x="20" y="28" fill="#F39200" font-weight="700" font-size="14">同一病人的 VPC</text>
+    <text x="20" y="46" fill="#7A8499" font-size="11">VPC transition 在 V3 — <tspan font-weight="700" fill="#F39200">比 sinus 早 1 個導程</tspan></text>
+
+    <g stroke="#F39200" stroke-width="2" fill="none" transform="translate(40,70)">
+      <!-- V1: deep S (VPC) -->
+      <path d="M0,30 L20,30 L24,28 L28,16 L34,54 L40,30 L70,30"/>
+      <!-- V2: medium S -->
+      <path d="M100,30 L120,30 L124,28 L128,16 L134,46 L140,30 L170,30"/>
+      <!-- V3: transition for VPC -->
+      <path d="M200,30 L220,30 L224,28 L228,8 L234,38 L240,30 L270,30" stroke="#FFD166" stroke-width="2.5"/>
+      <!-- V4: R prominent -->
+      <path d="M300,30 L320,30 L324,28 L328,4 L334,32 L340,30 L370,30"/>
+      <!-- V5: R prominent -->
+      <path d="M400,30 L420,30 L424,28 L428,2 L434,32 L440,30 L470,30"/>
+      <!-- V6: R prominent -->
+      <path d="M500,30 L520,30 L524,28 L528,2 L534,34 L540,30 L570,30"/>
+    </g>
+    <circle cx="360" cy="330" r="22" fill="none" stroke="#FFD166" stroke-width="2.5" stroke-dasharray="4 3"/>
+    <text x="360" y="370" fill="#FFD166" font-weight="700" font-size="12" text-anchor="middle">VPC 在 V3 轉正</text>
+  </g>
+
+  <!-- Conclusion banner -->
+  <g transform="translate(40,420)">
+    <rect width="820" height="68" rx="12" fill="rgba(243,146,0,0.12)" stroke="#F39200" stroke-width="2"/>
+    <text x="410" y="30" fill="#F39200" font-weight="800" font-size="15" text-anchor="middle">VPC transition 比 sinus 早 → 偏 LVOT / Aortic cusp</text>
+    <text x="410" y="52" fill="#B8C0D0" font-size="12" text-anchor="middle">如果 VPC 比 sinus 晚 → 偏 RVOT。永遠跟病人自己的 sinus 比，別只看絕對位置。</text>
+  </g>
+</svg>

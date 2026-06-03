@@ -65,18 +65,23 @@ ICE 在 papillary muscle / LVOT case 幾乎是必備；如果懷疑 LV summit，
 
 ---
 
-## 各 Suspected origin · 注意事項
+<!-- .slide: class="v-center" -->
 
-| Suspected origin | 需要注意 |
-| --- | --- |
-| **RVOT** | RVOT anatomy map |
-| **LVOT / cusp** | aortic root / LVOT map |
-| **LV summit** | CS、GCV、AIV map，必要時 coronary angiography |
-| **Para-Hisian** | His annotation、低功率、小心 AV block |
-| **Papillary muscle** | ICE 幾乎很重要 |
-| **Fascicular** | Purkinje potential mapping 很重要 |
+## 預判 origin 之後 · Setup 要準備什麼？
 
----
+| 預判 origin | Chamber / Anatomy | 額外 catheter | 安全注意 |
+| --- | --- | --- | --- |
+| **RVOT** | RV + RVOT + pulmonary valve | — | RVOT free wall 薄 |
+| **LVOT / Aortic cusp** | LV + LVOT + aortic root | ICE 建議 | 確認 coronary ostia 距離 |
+| **LV summit** | LVOT + cusp + CS + GCV + AIV | **CS catheter 必進**、ICE | LAD / LCX 距離、必要時 coronary angio |
+| **Para-Hisian** | RA septum + RV septum + His + NCC | — | His annotation、低功率、AV block 警戒 |
+| **Papillary muscle** | LV chamber | **ICE 必備** | Papillary 跳動、contact force 支援 |
+| **Fascicular** | LV septum + Purkinje area | — | Purkinje potential 標記 |
+
+<div class="callout orange">
+<span class="label">怎麼讀這張表</span>
+從左到右一列就是一個 case 的 setup checklist：先決定要建哪些 chamber，再決定要不要加 ICE / CS catheter，最後標出 ablation 安全考量。預判越準 → 越省時間。
+</div>
 
 Note:
-Setup 階段的每個決定（mapping chamber、catheter 配置、要不要 ICE）都來自 pre-case 預判的 origin。預判越準 → setup 越精準 → mapping 越省時間。
+Setup 階段的每個決定都來自 pre-case 預判的 origin。LV summit 是最複雜的 — 4 個 chamber + CS + ICE + coronary 距離全部要顧。

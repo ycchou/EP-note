@@ -52,9 +52,4 @@ Note:
 | **PASO 高但 ablation 無效** | 可能不是 origin，只是 exit | 去 opposite side / cusp / CS / LV summit 找 |
 
 Note:
-這張表是 case 中遇到「mismatch」時的決策樹 — 不要把 mismatch 當隨機，每種組合都告訴你下一步。
-
----
-
-Note:
-LAT 告訴你「電氣從哪冒出來」，PASO 告訴你「pacing 像不像」。兩者一致 → 燒；不一致 → 先想為什麼。這是進入 Part V Ablation 前的最後 checkpoint。
+這張表是 case 中遇到「mismatch」時的決策樹 — 不要把 mismatch 當隨機，每種組合都告訴你下一步。LAT 告訴你「電氣從哪冒出來」，PASO 告訴你「pacing 像不像」；兩者一致 → 燒；不一致 → 先想為什麼。這是進入 Part V Ablation 前的最後 checkpoint。

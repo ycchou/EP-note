@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" font-family="'Inter','Noto Sans TC',sans-serif">
+  <defs>
+    <linearGradient id="card2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#16223D"/>
+      <stop offset="1" stop-color="#0B1E3F"/>
+    </linearGradient>
+  </defs>
+
+  <text x="350" y="38" fill="#fff" font-weight="800" font-size="22" text-anchor="middle">Step 2 · 判上下</text>
+  <text x="350" y="60" fill="#7A8499" font-size="13" text-anchor="middle">看下壁導程 II / III / aVF</text>
+
+  <g transform="translate(40,90)">
+    <rect width="620" height="370" rx="16" fill="url(#card2)" stroke="#FFD166" stroke-width="2"/>
+
+    <!-- Inferior Axis (positive) -->
+    <g transform="translate(30,40)">
+      <text x="0" y="0" fill="#4ADE80" font-weight="800" font-size="16">下壁全正 (Inferior Axis)</text>
+      <text x="0" y="22" fill="#fff" font-size="13">→ 源自 <tspan font-weight="700" fill="#4ADE80">上方流出道 (OT)</tspan></text>
+      <text x="0" y="42" fill="#7A8499" font-size="12">訊號由上往下 → 朝向下壁導程 → 正向波</text>
+
+      <g stroke="#4ADE80" stroke-width="2.2" fill="none">
+        <path d="M0,110 L40,110 L42,108 L48,72 L54,108 L58,110 L100,110"/>
+        <text x="105" y="115" fill="#4ADE80" font-size="13" font-weight="700">II</text>
+        <path d="M125,110 L165,110 L167,108 L173,74 L179,108 L183,110 L223,110"/>
+        <text x="228" y="115" fill="#4ADE80" font-size="13" font-weight="700">III</text>
+        <path d="M250,110 L285,110 L287,108 L293,76 L299,108 L303,110 L340,110"/>
+        <text x="345" y="115" fill="#4ADE80" font-size="13" font-weight="700">aVF</text>
+      </g>
+    </g>
+
+    <!-- Superior Axis (negative) -->
+    <g transform="translate(30,210)">
+      <text x="0" y="0" fill="#FB7185" font-weight="800" font-size="16">下壁全負 (Superior Axis)</text>
+      <text x="0" y="22" fill="#fff" font-size="13">→ 源自 <tspan font-weight="700" fill="#FB7185">下方心尖 / 下壁</tspan></text>
+      <text x="0" y="42" fill="#7A8499" font-size="12">訊號由下往上 → 遠離下壁導程 → 負向波</text>
+
+      <g stroke="#FB7185" stroke-width="2.2" fill="none">
+        <path d="M0,110 L40,110 L42,112 L48,148 L54,112 L58,110 L100,110"/>
+        <text x="105" y="115" fill="#FB7185" font-size="13" font-weight="700">II</text>
+        <path d="M125,110 L165,110 L167,112 L173,146 L179,112 L183,110 L223,110"/>
+        <text x="228" y="115" fill="#FB7185" font-size="13" font-weight="700">III</text>
+        <path d="M250,110 L285,110 L287,112 L293,144 L299,112 L303,110 L340,110"/>
+        <text x="345" y="115" fill="#FB7185" font-size="13" font-weight="700">aVF</text>
+      </g>
+    </g>
+  </g>
+</svg>

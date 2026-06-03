@@ -39,9 +39,4 @@ Note:
 | **bigeminy / trigeminy** | Activation map 很好做，但要注意 **annotation accuracy** |
 
 Note:
-bigeminy / trigeminy 的 PVC 因為與 sinus beat 交替，annotation 容易把 sinus beat 也收進去 — 要特別檢查。
-
----
-
-Note:
-進入四大模組前的最後一張 — 先花 5–10 分鐘看清楚 EKG 與 VPC，比急著 mapping 重要太多。觀察到 frequent monomorphic 走 LAT Hybrid；infrequent 走 PASO + induction；multi-morphology 先開 APB；sedation 抑制就停 sedation + iso。
+bigeminy / trigeminy 的 PVC 因為與 sinus beat 交替，annotation 容易把 sinus beat 也收進去 — 要特別檢查。先花 5–10 分鐘看清楚 EKG 與 VPC，比急著 mapping 重要太多：frequent monomorphic 走 LAT Hybrid；infrequent 走 PASO + induction；multi-morphology 先開 APB；sedation 抑制就停 sedation 用 iso。

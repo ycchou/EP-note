@@ -7,77 +7,46 @@
 <div class="subtitle">VPC 一出現，每個分岔點該怎麼選</div>
 
 Note:
-這是 Workflow Part 14。把整個 case 的決策邏輯壓縮成一棵樹。
+這棵樹是 case 中遇到分岔時的「導航圖」 — 每個 yes / no 都有清楚的下一步。
 
 ---
 
 ## VPC Decision Tree
 
-<img src="assets/diagrams/decision-tree.svg" alt="VPC ablation decision tree visualization" />
-
-Note:
-這棵樹是 case 中遇到分岔時的「導航圖」 — 每個 yes / no 都有清楚的下一步。完整文字版見下一張。
+<img src="assets/diagrams/decision-tree.svg" alt="VPC ablation decision tree" class="svg-fit" />
 
 ---
 
-## Decision Tree · 文字版
+<!-- .slide: class="v-center" -->
 
-```text
-VPC 出現
-│
-├─ 是否為 clinical PVC？
-│   ├─ Yes → Pattern Matching confirms → 收進 LAT map
-│   └─ No  → Auto Pattern Bank 分到其他 morphology，不納入 target map
-│
-├─ VPC 是否頻繁？
-│   ├─ Frequent   → LAT Hybrid activation mapping 為主
-│   └─ Infrequent → PASO + limited activation + anatomy guide
-│
-├─ LAT earliest 是否夠早？
-│   ├─ Yes → 看 unipolar QS + contact + PASO
-│   └─ No  → 換 chamber / opposite side / cusp / CS
-│
-├─ PASO 是否高？
-│   ├─ High → 支持 target
-│   └─ Low  → 檢查 pacing output / contact，或考慮 deep / intramural origin
-│
-└─ Ablation
-    │
-    ├─ Target PVC 消失 → wait + induction
-    └─ 未消失         → 重新檢查 morphology / chamber / mapping quality
-```
-
----
-
-## 樹的核心邏輯
+## 樹的五個關鍵分岔點
 
 <div class="workflow-grid">
 <div class="workflow-step">
 <div class="num">1</div>
-<div class="title">先問是不是 clinical</div>
-<div class="desc">Pattern Matching = 過濾器</div>
+<div class="title">是 clinical PVC 嗎？</div>
+<div class="desc">Pattern Matching 比對 template — 不像就不收</div>
 </div>
 <div class="workflow-step">
 <div class="num">2</div>
-<div class="title">再問頻不頻繁</div>
-<div class="desc">決定 LAT 主導 還是 PASO 主導</div>
+<div class="title">頻繁還是少？</div>
+<div class="desc">Frequent → LAT 主導；Infrequent → PASO 主導</div>
 </div>
 <div class="workflow-step">
 <div class="num">3</div>
-<div class="title">看 LAT 夠不夠早</div>
-<div class="desc">不夠早 → 換 chamber</div>
+<div class="title">LAT 夠早嗎？</div>
+<div class="desc">不夠早就換 chamber / opposite side / cusp / CS</div>
 </div>
 <div class="workflow-step">
 <div class="num">4</div>
-<div class="title">看 PASO 夠不夠高</div>
-<div class="desc">不夠高 → 檢查 contact / output</div>
+<div class="title">PASO 夠高嗎？</div>
+<div class="desc">不夠 → 檢查 contact / output 或考慮 intramural</div>
 </div>
 <div class="workflow-step">
 <div class="num">5</div>
-<div class="title">RF 後驗證</div>
-<div class="desc">消失 → wait；沒消 → 重新 map</div>
+<div class="title">RF 後 PVC 消失了嗎？</div>
+<div class="desc">消失 → wait + induction；沒消 → 重 map quality</div>
 </div>
 </div>
 
-Note:
-每個 case 都會經過這 5 個分岔點 — 練熟這棵樹，case 就會行雲流水。
+<img src="assets/diagrams/workflow-flow.svg" alt="Workflow flow overview reference" class="svg-fit" style="max-height:34vh; margin-top:0.4em;" />

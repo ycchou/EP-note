@@ -152,16 +152,25 @@
   font-weight: 600;
 }
 
-/* ----------  Images  ---------- */
+/* ----------  Images · constrained to slide viewport  ---------- */
 .reveal img {
   border-radius: 10px;
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
   max-width: 100%;
+  max-height: 64vh;
   height: auto;
+  width: auto;
   margin: 0.3em auto;
   display: block;
   background: #0b1428;
   border: 1px solid rgba(255, 255, 255, 0.06);
+  object-fit: contain;
+}
+
+/* SVG that should fit slide width (decision tree, workflow flow) */
+.reveal img.svg-fit {
+  max-height: 70vh;
+  max-width: 92%;
 }
 
 .reveal img.no-shadow {
@@ -274,48 +283,19 @@
   color: var(--ink);
 }
 
-/* ----------  Brand footer (persistent)  ---------- */
+/* ----------  Brand footer (persistent) — CARTO 3 logo centered  ---------- */
 .brand-footer {
   position: fixed;
-  bottom: 12px;
-  left: 24px;
-  right: 24px;
+  bottom: 14px;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   z-index: 30;
   pointer-events: none;
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  color: var(--ink-mute);
-}
-
-.brand-footer .brand-bsw {
-  height: 22px;
-  width: auto;
-  opacity: 0.92;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
-}
-
-.brand-footer .brand-divider {
-  width: 1px;
-  height: 18px;
-  background: rgba(255, 255, 255, 0.18);
-}
-
-.brand-footer .brand-carto3 {
-  height: 22px;
-  width: auto;
-  opacity: 0.95;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
-}
-
-.brand-footer .brand-tag {
-  margin-left: auto;
-  color: var(--ink-mute);
-  font-weight: 500;
-  text-transform: uppercase;
+  opacity: 0.85;
 }
 
 /* ----------  Slide number & progress  ---------- */
@@ -458,12 +438,23 @@
 .pill-lat  { background: rgba(200, 16, 46, 0.18); color: #ff8aa0; border: 1px solid rgba(200, 16, 46, 0.4); }
 .pill-paso { background: rgba(124, 92, 255, 0.18); color: #b4a0ff; border: 1px solid rgba(124, 92, 255, 0.4); }
 
-/* Workflow steps */
+/* Workflow steps · vertically centered when sole content */
 .workflow-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-  margin: 0.5em 0;
+  gap: 14px 18px;
+  margin: 0.8em 0;
+  align-content: center;
+}
+
+/* Slide-level vertical centering helper.
+   Add <!-- .slide: class="v-center" --> to any slide. */
+.reveal .slides section.v-center,
+.reveal .slides section section.v-center {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 84vh;
 }
 
 .workflow-step {
@@ -504,10 +495,16 @@
   font-size: 0.75em;
 }
 
-/* ----------  Section title slides  ---------- */
-.section-title {
+/* ----------  Section title slides · vertically centered  ---------- */
+.reveal .slides section.section-title,
+.reveal .slides section section.section-title {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 88vh;
   text-align: center !important;
-  padding-top: 6% !important;
+  padding: 0 6% !important;
 }
 
 .section-title .part-no {
@@ -515,24 +512,25 @@
   font-size: 0.85em;
   letter-spacing: 0.4em;
   color: var(--carto-orange);
-  margin-bottom: 0.4em;
+  margin-bottom: 0.6em;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 .section-title h1 {
-  font-size: 2.4em;
-  margin: 0 auto 0.4em;
+  font-size: 2.6em;
+  margin: 0 auto 0.5em;
   max-width: 90%;
 }
 
 .section-title h1::after { display: none; }
 
 .section-title .subtitle {
-  font-size: 0.95em;
+  font-size: 1em;
   color: var(--ink-dim);
-  max-width: 75%;
+  max-width: 80%;
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 /* Multi-column layouts */
