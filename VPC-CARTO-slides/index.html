@@ -16,6 +16,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/carto-theme.css" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
   </head>
   <body>
     <div class="reveal">
@@ -159,6 +162,18 @@
       </div>
     </div>
 
+    <script>
+      // Defeat browser XHR cache for markdown files — append timestamp before reveal.js loads
+      (function () {
+        var stamp = Date.now();
+        document.querySelectorAll('section[data-markdown]').forEach(function (s) {
+          var orig = s.getAttribute('data-markdown');
+          if (orig && orig.indexOf('?') === -1) {
+            s.setAttribute('data-markdown', orig + '?t=' + stamp);
+          }
+        });
+      })();
+    </script>
     <script src="lib/reveal.js/dist/reveal.js"></script>
     <script src="lib/reveal.js/dist/plugin/markdown.js"></script>
     <script src="lib/reveal.js/dist/plugin/highlight.js"></script>
