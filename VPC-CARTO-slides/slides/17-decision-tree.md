@@ -49,4 +49,4 @@ Note:
 </div>
 </div>
 
-<img src="assets/diagrams/workflow-flow.svg" alt="Workflow flow overview reference" class="svg-fit" style="max-height:34vh; margin-top:0.4em;" />
+<img src="assets/diagrams/workflow-flow.svg" alt="Workflow flow overview reference" class="svg-fit" style="max-height:280px; margin-top:0.4em;" />

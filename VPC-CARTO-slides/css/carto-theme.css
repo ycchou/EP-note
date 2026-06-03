@@ -152,12 +152,16 @@
   font-weight: 600;
 }
 
-/* ----------  Images · constrained to slide viewport  ---------- */
+/* ----------  Images · constrained to slide stage (1280x800)  ----------
+   reveal.js stage is fixed 800px tall. With heading ~70px and footer logo
+   ~30px, useful image height is around 520px. We constrain max-height in
+   px so the value matches stage units regardless of browser viewport.
+*/
 .reveal img {
   border-radius: 10px;
   box-shadow: 0 14px 36px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
   max-width: 100%;
-  max-height: 64vh;
+  max-height: 460px;
   height: auto;
   width: auto;
   margin: 0.3em auto;
@@ -169,8 +173,15 @@
 
 /* SVG that should fit slide width (decision tree, workflow flow) */
 .reveal img.svg-fit {
-  max-height: 70vh;
-  max-width: 92%;
+  max-height: 540px;
+  max-width: 96%;
+}
+
+/* When image sits inside a 2-column layout it can be a bit smaller */
+.cols img,
+.cols.image-text img,
+.cols.image-wide img {
+  max-height: 400px;
 }
 
 .reveal img.no-shadow {
@@ -448,13 +459,11 @@
 }
 
 /* Slide-level vertical centering helper.
-   Add <!-- .slide: class="v-center" --> to any slide. */
+   With reveal.js center:true this is no-op for most cases, kept for any
+   slide that needs explicit override. */
 .reveal .slides section.v-center,
 .reveal .slides section section.v-center {
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 84vh;
+  /* reveal.js auto-centers; this class is now a marker only */
 }
 
 .workflow-step {
@@ -495,14 +504,11 @@
   font-size: 0.75em;
 }
 
-/* ----------  Section title slides · vertically centered  ---------- */
+/* ----------  Section title slides  ---------- */
+/* reveal.js now handles vertical centering via center:true.
+   We only style the inner content; no flex hack needed. */
 .reveal .slides section.section-title,
 .reveal .slides section section.section-title {
-  display: flex !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 88vh;
   text-align: center !important;
   padding: 0 6% !important;
 }
@@ -655,7 +661,97 @@ body.show-notes .brand-footer { display: none; }
 }
 .brand-footer .carto3-logo .ct-row { line-height: 1; }
 
-/* ----------  Lead I septal/free-wall HTML diagram  ---------- */
+/* ----------  Lead I origin comparison cards (v2)  ---------- */
+.lead1-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin: 0.4em 0;
+}
+.lead1-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 24px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #16223D, #0B1E3F);
+  border: 2px solid;
+}
+.lead1-card.septal { border-color: var(--carto-orange); }
+.lead1-card.freewall { border-color: var(--bad); }
+
+.lead1-card .badge {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6em;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  width: max-content;
+}
+.lead1-card.septal .badge {
+  background: var(--carto-orange);
+  color: var(--carto-deep);
+}
+.lead1-card.freewall .badge {
+  background: var(--bad);
+  color: var(--carto-deep);
+}
+
+.lead1-card h3 {
+  margin: 4px 0 12px 0 !important;
+  color: #fff !important;
+  font-size: 0.95em !important;
+}
+.lead1-card.septal h3 { color: var(--carto-orange) !important; }
+.lead1-card.freewall h3 { color: var(--bad) !important; }
+
+.lead1-card .waveform {
+  background: rgba(0,0,0,0.25);
+  border-radius: 8px;
+  padding: 8px 6px 4px;
+  margin: 6px 0 10px;
+}
+.lead1-card .waveform svg {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: block;
+  width: 100%;
+  height: 90px;
+  margin: 0;
+  max-height: none;
+}
+.lead1-card .wave-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.55em;
+  color: var(--ink-mute);
+  text-align: center;
+  margin-top: 2px;
+  letter-spacing: 0.04em;
+}
+
+.lead1-card .vec-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.7em;
+  color: var(--ink-dim);
+  margin: 6px 0;
+}
+.lead1-card .vec-line strong { color: #fff; }
+
+.lead1-card .reason {
+  font-size: 0.62em;
+  color: var(--ink-mute);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 10px;
+  margin-top: auto;
+  line-height: 1.45;
+}
+
+/* ----------  Lead I septal/free-wall HTML diagram (legacy, v1)  ---------- */
 .lead1-diagram {
   position: relative;
   width: 100%;

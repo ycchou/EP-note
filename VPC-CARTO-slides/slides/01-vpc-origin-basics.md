@@ -128,50 +128,58 @@ Note:
 
 ## Step 3 · Lead I 細分 Septal vs Free wall
 
-<div class="cols image-text">
-<div>
+<div class="lead1-grid">
 
-<div class="lead1-diagram">
-  <div class="lead1-vector">Lead I · 右 → 左</div>
+<div class="lead1-card septal">
+  <span class="badge">Septal Origin</span>
+  <h3>Lead I 正向 R 波</h3>
 
-  <div class="lead1-heart">
-    <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="160" cy="100" rx="140" ry="80" fill="rgba(58,74,92,0.45)" stroke="#7A8499" stroke-width="1.5"/>
-      <line x1="160" y1="28" x2="160" y2="172" stroke="#F39200" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <div class="waveform">
+    <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="48" x2="220" y2="48" stroke="#3A4A5C" stroke-width="0.6"/>
+      <path d="M0,48 L65,48 L72,46 L78,8 L86,68 L94,48 L220,48"
+            fill="none" stroke="#F39200" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="10" y="20" fill="#F39200" font-size="11" font-weight="700"
+            font-family="Inter, sans-serif">Lead I</text>
     </svg>
+    <div class="wave-label">主要向上 (Tall R wave)</div>
+  </div>
 
-    <span class="lead1-side-label rv">RV</span>
-    <span class="lead1-side-label lv">LV</span>
-    <span class="lead1-side-label septum">IV septum</span>
+  <div class="vec-line"><strong>向量方向</strong> · 右 → 左（朝向 Lead I）</div>
 
-    <span class="lead1-marker septal"><span class="dot"></span>Septal origin</span>
-    <span class="lead1-arrow septal-arrow"></span>
+  <div class="reason">
+    Septal site 位於 IV septum，VPC 由右向左傳導 → 與 Lead I 方向相同 → 正向波。<br/>
+    Ablation 通常較安全有效。
+  </div>
+</div>
 
-    <span class="lead1-marker freewall"><span class="dot"></span>Free wall origin</span>
-    <span class="lead1-arrow freewall-arrow"></span>
+<div class="lead1-card freewall">
+  <span class="badge">Free Wall Origin</span>
+  <h3>Lead I 負向 / QS 波</h3>
+
+  <div class="waveform">
+    <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="32" x2="220" y2="32" stroke="#3A4A5C" stroke-width="0.6"/>
+      <path d="M0,32 L65,32 L72,34 L80,72 L92,32 L220,32"
+            fill="none" stroke="#FB7185" stroke-width="2.5" stroke-linejoin="round"/>
+      <text x="10" y="20" fill="#FB7185" font-size="11" font-weight="700"
+            font-family="Inter, sans-serif">Lead I</text>
+    </svg>
+    <div class="wave-label">主要向下 (QS / negative)</div>
+  </div>
+
+  <div class="vec-line"><strong>向量方向</strong> · 外側 → 內側（遠離 Lead I）</div>
+
+  <div class="reason">
+    Free wall 位於 LV 外緣，VPC 由外向內傳導 → 與 Lead I 方向相反 → 負向波。<br/>
+    要小心 perforation、catheter contact 與 LV thrombus。
   </div>
 </div>
 
 </div>
-<div>
-
-<div class="callout orange">
-<span class="label">Lead I 正向 → Septal site</span>
-向量朝向 Lead I（右 → 左）<br/>
-通常 ablation 較安全有效
-</div>
-
-<div class="callout red">
-<span class="label">Lead I 負向 / QS → Free wall</span>
-向量遠離 Lead I（外側 → 內側）<br/>
-要小心 perforation 與 catheter contact
-</div>
-
-</div>
-</div>
 
 Note:
-這張改用 HTML 元素佈局，避免 SVG 內文字疊圖。橘色點是 septal origin，向量箭頭朝 Lead I 方向；紅色點是 free wall origin，向量遠離 Lead I。
+新版用直接的 ECG 波形比較取代心臟剖面圖 — operator 看到的就是 lab 螢幕上實際長相。Septal site 對應 tall R wave，free wall 對應 QS。
 
 ---
 

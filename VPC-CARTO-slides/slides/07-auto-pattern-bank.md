@@ -54,7 +54,7 @@ Redo case 最常見的情境就是「上次燒掉一顆，又長出新的一顆�
 <div class="cols image-wide">
 <div>
 
-<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" style="max-height:60vh;" />
+<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" />
 
 </div>
 <div>
