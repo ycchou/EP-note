@@ -13,15 +13,44 @@ Note:
 
 ## ⭐ 四個模組怎麼用？
 
-| 模組 | 最適合使用時間 | 主要目的 |
-| --- | --- | --- |
-| <span class="pill pill-pm">Pattern Matching</span> | case 一開始、mapping 中、ablation 後 | 鎖定 target VPC，不要收錯 morphology |
-| <span class="pill pill-apb">Auto Pattern Bank</span> | baseline、多型態、術後 | 自動分類不同 PVC morphology |
-| <span class="pill pill-lat">LAT Hybrid</span> | target morphology 確認後 | activation mapping，找 earliest site |
-| <span class="pill pill-paso">PASO</span> | activation 後確認、PVC 少時、術前確認 | pace mapping，比較 paced QRS 和 clinical PVC |
+<div class="module-quadrant">
+
+<div class="m-card pm">
+  <span class="m-tag">CARTO Module · PM</span>
+  <h3>Pattern Matching</h3>
+  <div class="m-when">case 一開始 → mapping 中 → ablation 後</div>
+  <div class="m-purpose">VPC 過濾器 · 鎖定 target morphology，避免收錯 morphology</div>
+</div>
+
+<div class="m-card apb">
+  <span class="m-tag">CARTO Module · APB</span>
+  <h3>Auto Pattern Bank</h3>
+  <div class="m-when">baseline · 多型態 · 術後</div>
+  <div class="m-purpose">VPC 自動分類器 · 分清楚多種 PVC morphology</div>
+</div>
+
+<div class="m-card lat">
+  <span class="m-tag">CARTO Module · LAT</span>
+  <h3>LAT Hybrid</h3>
+  <div class="m-when">target morphology 確認後</div>
+  <div class="m-purpose">Activation Mapping · 找 earliest activation site</div>
+</div>
+
+<div class="m-card paso">
+  <span class="m-tag">CARTO Module · PASO</span>
+  <h3>PASO</h3>
+  <div class="m-when">Activation 後確認 · PVC 少時 · 術前確認</div>
+  <div class="m-purpose">Pace Mapping · 比較 paced QRS vs clinical PVC</div>
+</div>
+
+</div>
+
+<div class="success-formula">
+成功公式 = same morphology + earliest LAT + unipolar QS + PASO 高 + stable contact + safe anatomy
+</div>
 
 Note:
-這張表搭配前面 Module Quadrant 的視覺已足夠 — 不再重複貼圖。記住四個模組各司其職、貫穿全 case：PM 全程過濾、APB 頭尾分類、LAT 中段找最早、PASO 確認像不像。
+四個模組各司其職、貫穿全 case：PM 全程過濾、APB 頭尾分類、LAT 中段找最早、PASO 確認像不像。每張卡片邊框顏色對應四大模組的標準色（cyan / orange / red / purple）。
 
 ---
 

@@ -665,6 +665,82 @@ body.show-notes .brand-footer { display: none; }
 }
 .brand-footer .carto3-logo .ct-row { line-height: 1; }
 
+/* ----------  Module Quadrant (HTML version of module-quadrant.svg)  ---------- */
+.module-quadrant {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 14px 18px;
+  margin: 0.3em 0;
+}
+
+.m-card {
+  padding: 14px 18px 14px;
+  border-radius: 12px;
+  border: 2px solid;
+  background: linear-gradient(135deg, #16223D, #0B1E3F);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.m-card.pm   { border-color: rgba(22, 184, 199, 0.7); }
+.m-card.apb  { border-color: rgba(243, 146, 0, 0.75); }
+.m-card.lat  { border-color: rgba(200, 16, 46, 0.7); }
+.m-card.paso { border-color: rgba(124, 92, 255, 0.7); }
+
+.m-card .m-tag {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 0.18em;
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.m-card h3 {
+  font-size: 1.05em !important;
+  font-weight: 800 !important;
+  margin: 0 0 2px !important;
+  line-height: 1.1 !important;
+}
+.m-card.pm   h3 { color: #5fe3ef !important; }
+.m-card.apb  h3 { color: var(--carto-orange) !important; }
+.m-card.lat  h3 { color: #ff8aa0 !important; }
+.m-card.paso h3 { color: #b4a0ff !important; }
+
+.m-card .m-when {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6em;
+  color: var(--ink-dim);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin: 4px 0 2px;
+  text-transform: uppercase;
+}
+
+.m-card .m-purpose {
+  font-size: 0.78em;
+  color: var(--ink);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.success-formula {
+  margin-top: 14px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, rgba(200, 16, 46, 0.14), rgba(11, 30, 63, 0.5));
+  border: 1px solid rgba(200, 16, 46, 0.45);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.78em;
+  color: #FB7185;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 /* ----------  Lead I origin comparison cards (v2)  ---------- */
 .lead1-grid {
   display: grid;
