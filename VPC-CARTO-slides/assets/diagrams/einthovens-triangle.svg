@@ -46,25 +46,25 @@
   <!-- Lead I: RA → LA (right to left, horizontal) -->
   <line x1="262" y1="230" x2="638" y2="230" stroke="#F39200" stroke-width="4" marker-end="url(#et-arr)"/>
   <g transform="translate(450,210)">
-    <rect x="-50" y="-22" width="100" height="32" rx="6" fill="#F39200"/>
-    <text x="0" y="-2" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead I</text>
-    <text x="0" y="14" fill="#0B1E3F" font-size="10" font-weight="600" text-anchor="middle">0°  · 右→左</text>
+    <rect x="-58" y="-26" width="116" height="48" rx="8" fill="#F39200"/>
+    <text x="0" y="-7" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead I</text>
+    <text x="0" y="13" fill="#0B1E3F" font-size="11" font-weight="700" text-anchor="middle">0° · 右→左</text>
   </g>
 
   <!-- Lead II: RA → LL -->
   <line x1="256" y1="248" x2="437" y2="525" stroke="#16B8C7" stroke-width="4" marker-end="url(#et-arr2)"/>
   <g transform="translate(305,420) rotate(56)">
-    <rect x="-55" y="-15" width="110" height="32" rx="6" fill="#16B8C7"/>
-    <text x="0" y="6" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead II</text>
-    <text x="0" y="22" fill="#0B1E3F" font-size="10" font-weight="600" text-anchor="middle">+60° · 右→腳</text>
+    <rect x="-62" y="-22" width="124" height="48" rx="8" fill="#16B8C7"/>
+    <text x="0" y="-3" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead II</text>
+    <text x="0" y="17" fill="#0B1E3F" font-size="11" font-weight="700" text-anchor="middle">+60° · 右→腳</text>
   </g>
 
   <!-- Lead III: LA → LL -->
   <line x1="644" y1="248" x2="463" y2="525" stroke="#FB7185" stroke-width="4" marker-end="url(#et-arr3)"/>
   <g transform="translate(595,420) rotate(-56)">
-    <rect x="-55" y="-15" width="110" height="32" rx="6" fill="#FB7185"/>
-    <text x="0" y="6" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead III</text>
-    <text x="0" y="22" fill="#0B1E3F" font-size="10" font-weight="600" text-anchor="middle">+120° · 左→腳</text>
+    <rect x="-62" y="-22" width="124" height="48" rx="8" fill="#FB7185"/>
+    <text x="0" y="-3" fill="#0B1E3F" font-weight="800" font-size="16" text-anchor="middle">Lead III</text>
+    <text x="0" y="17" fill="#0B1E3F" font-size="11" font-weight="700" text-anchor="middle">+120° · 左→腳</text>
   </g>
 
   <!-- Einthoven's law equation -->
