@@ -54,15 +54,15 @@ Redo case 最常見的情境就是「上次燒掉一顆，又長出新的一顆�
 <div class="cols image-wide">
 <div>
 
-<img src="assets/carto/auto-pattern-bank-panel.png" alt="Auto Pattern Bank panel with 6 categorized VPC morphologies" style="max-height:340px;" />
+<img src="assets/vgh/apb-vgh.png" alt="VGH Auto Pattern Bank with 2 patterns 57+20 beats" />
 
 </div>
 <div>
 
-- **Pattern 1 (547 beats)** — 主要 morphology
-- **Pattern 2 / 3** (160 / 79) — 次要
-- **Pattern 4–6** — 偶發
-- 下方 Cycle Length / burden 並排
+- **Pattern 1 (57 beats)** — 主要 morphology
+- **Pattern 8 (20 beats)** — 次要 morphology
+- 下方 burden % + Cycle Length 並排
+- 每個 pattern 都顯示 POI（Point of Interest）位置
 
 <div class="callout orange">
 看一眼知道：病人有幾型、哪型最多、該鎖定哪型當 target。

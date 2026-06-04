@@ -50,28 +50,22 @@ Isoproterenol 通常從 1–3 mcg/min 起始，逐步加量到 HR ~ 120 bpm，�
 
 ## Step 3 · 用 Pattern Matching / Auto Pattern Bank 確認
 
-這時候模組又很重要。
-
-<div class="cols">
+<div class="cols image-wide">
 <div>
 
 ### Pattern Matching
-確認：
+確認原本 target VPC 是否真的沒有再出現。
 
-```text
-原本 target VPC 是否真的沒有再出現。
-```
+### Auto Pattern Bank
+- 系統繼續分類所有出現的 beat
+- 看 burden 是否歸零
+- **若出現新 pattern → 可能多 focus**
 
 </div>
 <div>
 
-### Auto Pattern Bank
-確認：
-
-```text
-術後出現的是不是同一 morphology？
-還是新的 VPC morphology？
-```
+<img src="assets/vgh/apb-vgh.png" alt="VGH Auto Pattern Bank post-ablation check" />
+<span class="fig-cap">Post-ablation APB · 對照 ablation 前的 pattern bank</span>
 
 </div>
 </div>

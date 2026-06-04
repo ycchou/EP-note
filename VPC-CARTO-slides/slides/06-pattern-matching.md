@@ -89,35 +89,51 @@ Note:
 
 ## Pattern Matching Viewer · 實際畫面
 
-<img src="assets/carto/pattern-matching-viewer.png" alt="Pattern Matching Viewer screen showing 12-lead comparison with similarity score" />
-<span class="fig-cap">CARTO 3 Pattern Matching Viewer · 左：template (-0.14 similarity)、右：clinical PVC 12-lead 對照</span>
+<div class="cols image-text">
+<div>
+
+<img src="assets/vgh/pm-viewer-vgh.png" alt="Pattern Matching Viewer with similarity score 1.00" />
+<span class="fig-cap">PM Viewer · score 1.00 完美對齊（VGH-TP）</span>
+
+</div>
+<div>
+
+<img src="assets/vgh/pattern-bank-vgh.png" alt="Pattern Bank with multiple captured templates" />
+<span class="fig-cap">Pattern Bank · 同時管理 SR + VPC 多個 template</span>
+
+</div>
+</div>
 
 Note:
-左邊是建立好的 BS PVC 1 template，右邊是即時比對的 beat。系統會給每一拍一個 similarity score（這張是 -0.14，代表還沒對上）。實戰中我們設定 ≥ 90% 才納入 LAT map。
+左圖：PM Viewer 即時顯示 similarity score（這張剛好對到 1.00，最完美）。右圖：Pattern Bank 同時管理多個 template（SR + 不同 PVC morphology）。實戰門檻通常設 ≥ 90%。
 
 ---
 
-## 建立 Template · Pattern Bank 介面
+## Template 抓取 SOP · VGH-TP 標準流程
 
-<div class="cols image-wide">
+<div class="cols">
 <div>
 
 ### 步驟
-1. 挑一拍乾淨的 clinical PVC
-2. Type 選 **PVC**
-3. 12-lead 自動載入
-4. 設定 sample window (–18 → 150 ms)
-5. 按 **OK** 存入 Pattern Bank
-6. 之後 mapping 都用這個 template
+1. 選取選單上方的 **時鐘** icon
+2. 使用 **Pattern Matching** 抓取
+3. 同時抓 **SR** 與 **VPC**（可能數個）template
+4. 各個 Map 的 Confidence 設定好 PM template
+5. 勾選 **「Do not require while pacing」**
 
 </div>
 <div>
 
-<img src="assets/carto/pattern-bank-single.png" alt="Pattern Bank single template setup" />
-<span class="fig-cap">Pattern Bank · 建立 BS PVC 1 template (CARTO 3 IFU)</span>
+<div class="callout orange">
+<span class="label">⭐ 為什麼勾「Do not require while pacing」</span>
+Pacing 時 paced QRS 不符合 PVC template 是正常的 — 不勾的話 PASO 期間系統會把 paced beats 都濾掉，PASO 就用不了。
+</div>
 
 </div>
 </div>
+
+Note:
+這是 VGH-TP 戰術重點 — 不只是抓 VPC template，也要抓 SR template 同時用。Confidence 設定後系統會在每個 chamber 自動用對應 template。「Do not require while pacing」是新手常漏的勾選 — 沒勾的話 PASO 階段會卡住。
 
 ---
 

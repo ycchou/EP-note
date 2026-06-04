@@ -85,3 +85,125 @@ ICE 在 papillary muscle / LVOT case 幾乎是必備；如果懷疑 LV summit，
 
 Note:
 Setup 階段的每個決定都來自 pre-case 預判的 origin。LV summit 是最複雜的 — 4 個 chamber + CS + ICE + coronary 距離全部要顧。
+
+---
+
+## CARTO Study Setup · 開新 study
+
+<div class="cols image-wide">
+<div>
+
+### 填四件事
+
+1. **Patient name + ID**
+2. **Date of birth + Gender**
+3. **Physician**（主治醫師）
+4. **Select template** — Ventricular Tachycardia
+
+</div>
+<div>
+
+<img src="assets/vgh/study-setup.png" alt="CARTO Study Setup screen" />
+<span class="fig-cap">CARTO Study Setup 畫面（VGH-TP）</span>
+
+</div>
+</div>
+
+Note:
+Template 選 Ventricular Tachycardia 是 VPC ablation 的標準起點 — 自帶適當 chamber/filter 預設值。Physician 欄位要填，研究案 documentation 才能撈得到。
+
+---
+
+## Catheter Setup · DECANAV + THERMOCOOL
+
+<div class="cols image-wide">
+<div>
+
+### 標準組合
+- **DECANAV** — 多極 mapping catheter
+- **THERMOCOOL** — ablation catheter（ST / SF）
+
+### 注意
+- 兩根都要在 Catheter Setup 畫面被正確辨識
+- 確認 PIU PIN 配置與畫面顯示一致
+- Catheter color 在 3D map 上對應
+
+</div>
+<div>
+
+<img src="assets/vgh/catheter-setup.png" alt="CARTO Catheter Setup screen with DECANAV and THERMOCOOL" />
+<span class="fig-cap">Catheter Setup · DECANAV + THERMOCOOL（VGH-TP）</span>
+
+</div>
+</div>
+
+Note:
+DECANAV 在 RVOT mapping 是主力 — 一根 catheter 同時看 10 個極可大幅縮短 FAM 時間。THERMOCOOL ST 有 force sensor，contact 不穩會即時提醒。
+
+---
+
+## Map Setup · 預先建好幾個 Map
+
+<div class="cols image-wide">
+<div>
+
+### Map List 預先建立
+
+- **1-RVOT SR** — 用於 sinus rhythm map
+- **2-RVOT A** — RVOT activation map
+- **3-CS A** — CS activation map
+- **4-CUSP A** — Aortic cusp activation map
+- **5-RVOT B** — 備用
+
+### Map Setup 必選
+
+| 項目 | 設定值 |
+| --- | --- |
+| Chamber | **Ventricular** |
+| 勾選 | **LAT hybrid** ✓ |
+| Reference | **BS V1–V6 Automatic** |
+| WOI | **–180 to –20** |
+
+</div>
+<div>
+
+<img src="assets/vgh/map-setup.png" alt="CARTO Map Setup with WOI and LAT hybrid checked" />
+<span class="fig-cap">Map Setup · LAT hybrid 勾選 + WOI –180 to –20</span>
+
+</div>
+</div>
+
+Note:
+**先建好 5 個 Map** 是 VGH-TP 戰術 — case 一開始就把可能用到的 chamber 都建出來，省得 mapping 中再切換。**WOI –180 to –20** 是 VPC mapping 的標準視窗，涵蓋預期 earliest activation 範圍。
+
+---
+
+## Mapping 頁面 · Layout + Parallel Mapping
+
+<div class="cols">
+<div>
+
+### 畫面配置
+
+- **主畫面：左邊**（active map 即時操作）
+- **副畫面：右邊**（reference map 對照）
+
+### Parallel Mapping
+
+將預先設定好的 Map（RVOT SR、RVOT A、CS A、CUSP A…）打開 parallel mapping。
+
+</div>
+<div>
+
+<div class="callout orange">
+<span class="label">為什麼要 parallel</span>
+- 同一個 case 多 chamber 比較 timing
+- LV summit case：RVOT vs LVOT vs cusp vs CS 並列看
+- Sinus rhythm 與 PVC map 一鍵切換對照
+</div>
+
+</div>
+</div>
+
+Note:
+Parallel mapping 是 LV summit / 複雜 origin case 的關鍵 — 一個畫面同時看四個 chamber 的 earliest，origin 在哪一個 chamber 一目了然。VGH-TP 預設 layout 就是「左主右副」，operator 翻 case 時不用重新調畫面。

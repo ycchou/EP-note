@@ -94,6 +94,32 @@ Note:
 
 ---
 
+## PASO Viewer · 實際畫面
+
+<div class="cols image-wide">
+<div>
+
+<img src="assets/vgh/paso-viewer-vgh.png" alt="VGH PASO Viewer with correlation score" />
+<span class="fig-cap">PASO Viewer · Correlation 0.998 + 12-lead 對齊比較</span>
+
+</div>
+<div>
+
+### 戰術重點 (VGH-TP)
+
+- **臨床 12-lead VT 波形為 template**
+- **Pace mapping score &gt; 90% 視為接近 exit site**
+- 每條 lead 都看 morphology 對不對齊
+- 不像的 lead → 告訴你 catheter 要往哪邊移
+
+</div>
+</div>
+
+Note:
+這張是 VGH 真實 PASO Viewer — Correlation 0.998 表示這個 pacing 點與 clinical VT 波形 99.8% 相似。VGH-TP 的門檻：>90% 就認為接近 exit site，搭配 LAT earliest 一起決定 RF target。
+
+---
+
 ## PASO 操作步驟
 
 ### Step 1 · 建立 clinical PVC template

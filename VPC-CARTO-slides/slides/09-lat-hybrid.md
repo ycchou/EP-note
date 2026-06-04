@@ -117,10 +117,52 @@ VPC map 以 **PVC QRS onset = time zero**，找 local EGM 比 QRS onset 早多�
 
 ---
 
+## Mapping 開始 · ACCURESP + Respiration Gating
+
+<div class="cols image-text">
+<div>
+
+### 戰術 SOP (VGH-TP)
+
+1. **開啟 ACCURESP** — 自動偵測呼吸
+2. **Enable Respiration Gating** — 只收特定相位的點
+3. 導管進入後 **找地方收呼吸** baseline
+4. 開始用 **DECANAV** 收 **FAM + EA**
+
+</div>
+<div>
+
+<img src="assets/vgh/respiration-gating.png" alt="ACCURESP Respiration Gating dialog" />
+<span class="fig-cap">Respiration Gating · Mechanical ventilation 連接 PIU</span>
+
+</div>
+</div>
+
+Note:
+**ACCURESP** 是 CARTO 內建的呼吸補償演算法 — 不啟動的話，呼吸造成的 catheter shift 會讓 map 變形。先把 catheter 放在穩定位置收 30 秒呼吸 baseline，系統學會病人呼吸模式後再開始 mapping。**DECANAV** 多極 catheter 同時收 FAM（解剖）與 EA（電氣）效率最高。
+
+---
+
 ## LAT Hybrid · 實際畫面
 
-<img src="assets/carto/lat-activation-map.png" alt="CARTO 3 LAT Hybrid activation map" />
-<span class="fig-cap">CARTO 3 LAT Hybrid Map · 紅色 = earliest activation（PVC beat 的 LAT）·  catheter 顯示於 sinus rhythm 位置</span>
+<div class="cols image-wide">
+<div>
+
+<img src="assets/vgh/rvot-3d-map.png" alt="VGH RVOT 3D activation map" />
+<span class="fig-cap">RVOT activation map · 紅色 hot zone = earliest（VGH-TP）</span>
+
+</div>
+<div>
+
+### 怎麼看這張 map
+
+- **紅色 hot zone** = earliest activation（–195 ~ –40 ms）
+- **藍紫色** = latest activation
+- catheter tip 在 map 上即時顯示 sinus rhythm 位置
+- 下方 surface ECG + reference EGM 同步
+
+</div>
+</div>
 
 Note:
 這是真實 LAT Hybrid map — 顏色是 PVC 時的 LAT timing，但每個 point 的幾何位置是該 PVC 前 sinus beat 的位置，避免 PVC 時 catheter 漂移污染 map。
