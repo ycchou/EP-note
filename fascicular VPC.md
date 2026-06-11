@@ -28,9 +28,14 @@ Left bundle branch
 * Scar border zone
 * Purkinje/fascicular system
 
+<img width="1000" height="1227" alt="image" src="https://github.com/user-attachments/assets/14e6fa4c-3705-4157-b0f0-d89f5c58c8f5" />
+
+
 而 **fascicular VPC** 就是比較偏向來自 **左心室 septum 上的 Purkinje/fascicular network**。
 
 ***
+<img width="1536" height="801" alt="image" src="https://github.com/user-attachments/assets/ffba39d2-b79e-4af8-8c33-8a3bf3bbe315" />
+
 
 # 2. 為什麼 Fascicular VPC 的 QRS 會比較「窄」？
 
