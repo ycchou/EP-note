@@ -24,6 +24,11 @@
 * **出現 Delta 波（$\delta$ wave）：** 心室有一部分肌肉被旁道提早去極化，在 QRS 波群的起始段拉出一個緩慢上升的斜坡。
 * **QRS 波群變寬（大於 120 ms）：** 經正常傳導系統下傳的訊號，與經旁道下傳的訊號，在心室內發生融合（Fusion）。
 
+<img width="2048" height="1152" alt="image" src="https://github.com/user-attachments/assets/47787138-2da1-41f0-9595-0ac04291ade4" />
+
+<img width="2048" height="878" alt="image" src="https://github.com/user-attachments/assets/2d94c9dc-36bb-41cd-9c71-01b5043539b9" />
+
+
 > 💡 **反觀「隱匿性旁道（Concealed AP）」：**
 > 如果一條旁道只能逆傳（心室 ➔ 心房），完全無法順傳。這意味著平時竇性心律時，訊號無法走旁道跨越到心室。因此，**平時的靜態心電圖會完全正常（沒有 Delta 波、PR 間期正常）**。這種旁道引起的折返雖然也會導致心動過速，但在臨床定義上，**不會**被稱為 WPW 綜合症。
 
