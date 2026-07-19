@@ -2,18 +2,19 @@
 
 # 心臟電生理學筆記：PSVT 中 AVNRT 與 AVRT 的鑑別診斷與 EP Study 完整流程
 
-本文整合了 **陣發性上心室頻脈（Paroxysmal Supraventricular Tachycardia, PSVT）** 兩大主角——**房室結折返性頻脈（Atrioventricular Nodal Reentrant Tachycardia, AVNRT）** 與 **房室折返性頻脈（Atrioventricular Reentrant Tachycardia, AVRT）**——從 **體表心電圖（Surface ECG）** 初步鑑別，到 **電生理檢查（Electrophysiology Study, EP study）** 進階手法，再到完整的臨床 Workflow。
+本文整合了 **陣發性上心室頻脈（Paroxysmal Supraventricular Tachycardia, PSVT）** 兩大主角——**房室結折返性頻脈（Atrioventricular Nodal Reentrant Tachycardia, AVNRT）** 與 **房室折返性頻脈（Atrioventricular Reentrant Tachycardia, AVRT）**——從核心機制、旁道（Accessory Pathway）順向/逆向傳導與 WPW 臨床核心，到 **體表心電圖（Surface ECG）** 與 **電生理檢查（Electrophysiology Study, EP study）** 的鑑別，再到完整的臨床 Workflow。
 
 閱讀地圖：
 
 1. [核心機制與解剖學基礎](#一核心機制與解剖學基礎)
 2. [AVNRT 與 AVRT 的亞型細分](#二avnrt-與-avrt-的亞型細分)
-3. [第一部分：Surface ECG 的鑑別診斷](#三第一部分surface-ecg-的鑑別診斷)
-4. [第二部分：EP Study 的實戰鑑別](#四第二部分ep-study-的實戰鑑別)
-5. [基礎間期（Baseline Intervals）完整定義](#五基礎間期baseline-intervals完整定義)
-6. [進階 Pacing Maneuvers 深入拆解](#六進階-pacing-maneuvers-深入拆解)
-7. [總結鑑別表](#七總結鑑別表)
-8. [完整 PSVT Clinical Workflow（7 Phases）](#八完整-psvt-clinical-workflow7-phases)
+3. [深入旁道：順向 vs 逆向傳導與 WPW 的臨床核心](#三深入旁道順向-vs-逆向傳導與-wpw-的臨床核心)
+4. [鑑別診斷（一）：Surface ECG](#四鑑別診斷一surface-ecg)
+5. [鑑別診斷（二）：EP Study 的實戰鑑別](#五鑑別診斷二ep-study-的實戰鑑別)
+6. [基礎間期（Baseline Intervals）完整定義](#六基礎間期baseline-intervals完整定義)
+7. [進階 Pacing Maneuvers 深入拆解](#七進階-pacing-maneuvers-深入拆解)
+8. [總結鑑別表](#八總結鑑別表)
+9. [完整 PSVT Clinical Workflow（7 Phases）](#九完整-psvt-clinical-workflow7-phases)
 
 ---
 
@@ -89,7 +90,75 @@ flowchart TD
 
 ---
 
-## 三、第一部分：Surface ECG 的鑑別診斷
+## 三、深入旁道：順向 vs 逆向傳導與 WPW 的臨床核心
+
+由於 AVRT 完全依賴旁道（Accessory Pathway, AP），在進入鑑別流程前，必須先徹底理解旁道（以及 AV node）的「**順向傳導（Anterograde，心房 → 心室）**」與「**逆向傳導（Retrograde，心室 → 心房）**」。這兩個方向的傳導能力，直接決定了患者的**猝死風險、臨床症狀、心電圖判讀，以及急診用藥的絕對禁忌**——絕非只是名詞上的文字遊戲。
+
+### 1. 什麼是真正的 WPW syndrome？
+
+**WPW syndrome（Wolff-Parkinson-White Syndrome）在醫學定義上，特指具備「順向傳導（Anterograde conduction）」能力的旁道。** 這條旁道解剖上可分布在 left free wall（最常見，二尖瓣環）、right free wall 或 septum，但在生理功能上「必須能夠順向將電訊號從心房傳到心室」，這才是 WPW 定義的靈魂。
+
+#### Sinus rhythm 時：顯性順向旁道的三大 ECG 標誌（Pre-excitation）
+
+訊號繞過 AV node 這個會「踩剎車」的收費站，經旁道搶先傳入心室（pre-excitation），造成三大標誌：
+
+- **PR interval 縮短（< 120 ms）**：訊號走旁道捷徑，跳過 AV node 的減速。
+- **Delta wave（δ wave）**：部分心室肌被旁道提早去極化，在 QRS 起始段拉出一個緩升斜坡。
+- **QRS 增寬（> 120 ms）**：正常傳導與旁道下傳的訊號在心室內發生 fusion。
+
+<img width="2048" height="1152" alt="pre-excitation delta wave" src="https://github.com/user-attachments/assets/47787138-2da1-41f0-9595-0ac04291ade4" />
+
+<img width="2048" height="878" alt="WPW ECG" src="https://github.com/user-attachments/assets/2d94c9dc-36bb-41cd-9c71-01b5043539b9" />
+
+> 💡 **對比 Concealed AP（隱匿性旁道）：** 若旁道**只能逆傳**（心室 → 心房）、完全無法順傳，sinus rhythm 時訊號無法經旁道到心室 → **靜態 ECG 完全正常（沒有 Delta wave、PR 正常）**。這種旁道引起的折返雖也會導致頻脈，但臨床上**不稱為 WPW**。
+> （這與 baseline HV interval 互相呼應：Manifest AP 因心室被提早激動，常使 **HV < 35 ms 甚至為負值**，見[第六章](#六基礎間期baseline-intervals完整定義)。）
+
+#### 發作 AVRT 時：最常走 Orthodromic
+
+即使 WPW 旁道本身具雙向傳導能力，發作時仍有 **90–95% 走 Orthodromic AVRT**（下傳走 AV node–His-Purkinje、逆傳走旁道）→ 呈**窄 QRS**，且平時看得到的 Delta wave 在發作期間反而暫時消失。只有約 **5% 走 Antidromic AVRT**（下傳走旁道、逆傳走 AV node）→ 呈**極度寬大畸形 QRS（fully pre-excited）**，在急診極易被誤診為 VT。（完整分類見[第二章](#二avnrt-與-avrt-的亞型細分)。）
+
+<img width="763" height="556" alt="antidromic AVRT" src="https://github.com/user-attachments/assets/27c42fbd-adbe-4278-89f9-f7a801943828" />
+
+### 2. 區分順向 vs 逆向傳導的四大臨床意義
+
+**① 決定「致命性猝死風險」的高低（最關鍵指標）**
+
+旁道是否具備**順向傳導（心房 → 心室）**能力，是評估猝死的黃金指標：
+
+- **Concealed AP（僅逆傳）**：萬一發生 **Afib**，心房每分鐘 350–600 下的混亂訊號**完全無法**經旁道下傳，只能走具濾波/限速功能的 AV node → 心室率頂多 100–150 → 猝死風險極低。
+- **Manifest AP / WPW（具順傳）**：旁道無限速功能、不應期常很短。一旦 **WPW + Afib**，心房高達 ~400 下的訊號毫無阻攔地經旁道灌入心室 → 心室率狂飆 250–300 → 可瞬間惡化為 **VF（心臟驟停）而猝死**。
+
+> 只要靜態 ECG 看到 Delta wave（代表具順向傳導），臨床上就必須高度警惕其 Afib 誘發 VT/VF 的潛在致命風險。
+
+**② 決定發作時的 ECG 外觀（寬 vs 窄 QRS）**
+
+| AVRT 類型 | 電訊號路線 | ECG 表現與臨床特性 |
+| --- | --- | --- |
+| **Orthodromic** | AV node（順）→ 心室 → 旁道（逆）→ 心房 | **窄 QRS**，相對穩定的 PSVT，急診處置較有餘裕 |
+| **Antidromic** | 旁道（順）→ 心室 → AV node（逆）→ 心房 | **極度寬大畸形 QRS**，難與 VT 區分，常需直接 synchronized cardioversion |
+
+**③ 急診用藥的絕對禁忌（Contraindications）**
+
+當呈現 **pre-excited、寬 QRS 的不規則頻脈（如 WPW + Afib）**，代表心房訊號正經順向旁道大量衝向心室：
+
+- ⚠️ **絕對禁用 AV nodal blockers**：Verapamil、Diltiazem、Digoxin、Beta-blockers，有時甚至包括 Adenosine。
+- **致命原因**：這些藥把 AV node 完全鎖死 → 原本走 AV node 的訊號全被逼往那條無限速的順向旁道 → 心室率瞬間從 180 飆破 300 → **當場推入 VF 的死亡深淵**。
+- **正確處置**：給予阻斷旁道傳導的藥物（**Procainamide、Amiodarone**）或直接 **synchronized cardioversion**。
+- 此原則直接呼應 [Phase 1 急性期處置](#phase-1pre-procedural-clinical-phase診間與急診處置)。
+
+**④ Ablation mapping 的導引依據**
+
+- 尋找**順向**旁道的心室端出口：從心房進行 **Atrial pacing**，觀察最早心室激動（V 波）的位置 → 通常是電燒最核心目標。
+- 尋找**逆向**旁道的心房端入口：從心室進行 **Ventricular pacing**，觀察最早逆傳心房激動（A 波）的位置 → 成為精準消融點。
+- 實作見 [Phase 5 路線 B](#phase-5target-mapping--catheter-ablation)。
+
+> 💡 **核心臨床邏輯總結：**
+> - **順向傳導（Anterograde）** 決定：平時有無 Delta wave、pre-excited Afib 的猝死風險、發作是否呈致命寬 QRS ——是評估**安全性與藥物禁忌**的關鍵指標。
+> - **逆向傳導（Retrograde）** 決定：會不會發作最常見的窄 QRS Orthodromic AVRT ——是折返環周而復始不可或缺的「回程線路」，也是手術標測消融的重要依據。
+
+---
+
+## 四、鑑別診斷（一）：Surface ECG
 
 進導管室之前，Surface ECG 已能提供高準確度線索。核心觀察點：**RP interval 長短** 與 **Retrograde P wave 型態**。
 
@@ -125,7 +194,7 @@ Orthodromic AVRT (Long-RP-ish, RP ≥ 70 ms)
 
 ---
 
-## 四、第二部分：EP Study 的實戰鑑別
+## 五、鑑別診斷（二）：EP Study 的實戰鑑別
 
 ### 1. 導管放置位置（Catheter Placement）
 
@@ -133,12 +202,12 @@ Orthodromic AVRT (Long-RP-ish, RP ≥ 70 ms)
 
 ```mermaid
 flowchart LR
-    subgraph 右心系統
+    subgraph RightHeart["右心系統"]
     HRA["HRA<br/>High Right Atrium<br/>高位右房訊號"]
     HIS["HIS<br/>His Bundle<br/>房室交界 / His potential"]
     RV["RV<br/>Right Ventricle apex<br/>心室刺激與記錄"]
     end
-    subgraph 左心系統（間接）
+    subgraph LeftHeart["左心系統（間接）"]
     CS["CS<br/>Coronary Sinus<br/>近端 9-10 → 遠端 1-2<br/>記錄 LA / LV"]
     end
 ```
@@ -173,7 +242,7 @@ Concentric activation（中隔最早）        Eccentric activation（偏離中�
 - **Concentric**：最早心房激動在 **septal region**（HIS 的 A 波或 CS 近端）→ 可見於 AVNRT **或** septal AP 的 AVRT。
 - **Eccentric**：最早心房激動**偏離中隔**（CS 遠端 = Left free-wall AP；HRA = Right free-wall AP）→ **一旦發現即排除 typical AVNRT，直接診斷 AVRT**。
 
-> 💡 **鑑別診斷主流程圖**
+#### 鑑別診斷主流程圖
 
 ```mermaid
 flowchart TD
@@ -191,7 +260,7 @@ flowchart TD
 
 ---
 
-## 五、基礎間期（Baseline Intervals）完整定義
+## 六、基礎間期（Baseline Intervals）完整定義
 
 這三個 baseline intervals **必須在 Sinus rhythm（自發心律、完全無 pacing）下測量**——因為它們評估的是「訊號的生理傳導時間」，一旦 pacing 就會改變激動起點與方向，量到的就不是生理間期了。
 
@@ -214,7 +283,7 @@ Atrial pacing 的激動起點就是導管位置，會改變心房去極化方向
 
 ---
 
-## 六、進階 Pacing Maneuvers 深入拆解
+## 七、進階 Pacing Maneuvers 深入拆解
 
 對於 **concentric activation 且 VA > 70 ms** 的困難病例，用以下經典手法一錘定音。
 
@@ -326,7 +395,7 @@ Septal AP（AVRT）    ：不論有無 His capture，都直接走中隔旁 AP �
 
 ---
 
-## 七、總結鑑別表
+## 八、總結鑑別表
 
 | 鑑別項目 | **AVNRT (Typical)** | **AVRT (Orthodromic)** |
 | --- | --- | --- |
@@ -343,7 +412,7 @@ Septal AP（AVRT）    ：不論有無 His capture，都直接走中隔旁 AP �
 
 ---
 
-## 八、完整 PSVT Clinical Workflow（7 Phases）
+## 九、完整 PSVT Clinical Workflow（7 Phases）
 
 從病患入院、進導管室、EP study、消融到術後照護的完整標準臨床流程，依時間軸劃分為 7 個 Phases。
 
@@ -367,6 +436,8 @@ flowchart LR
   2. 第二線：**Adenosine IV rapid bolus**（6 mg → 無效則 12 mg）；給藥時**連續記錄 ECG**，觀察是「走 A 終止」還是「走 V 終止」（對後續診斷極有幫助）。
   3. 第三線：Adenosine 禁忌 / 無效 → **Calcium channel blockers**（Verapamil / Diltiazem）或 **Beta-blockers**。
 
+> ⚠️ **例外警示：** 若為 **pre-excited、寬 QRS 的不規則頻脈（WPW + Afib）**，**絕對禁用 AV nodal blockers**（含 Adenosine），否則可能誘發 VF；改用 Procainamide/Amiodarone 或直接電擊。原理詳見[第三章 §2 ③](#三深入旁道順向-vs-逆向傳導與-wpw-的臨床核心)。
+
 **2. 術前評估與準備（Pre-Op Evaluation）**
 
 - **Baseline ECG Review**：恢復 sinus rhythm 後看有無 **Delta wave** → 有 = WPW（Manifest AVRT）；無 = AVNRT 或 Concealed AVRT。
@@ -377,8 +448,8 @@ flowchart LR
 
 1. **麻醉**：平躺、接 12-lead ECG + defibrillator pads；Conscious sedation（Midazolam / Fentanyl）+ 雙側 groin 局麻。
 2. **血管通路**：常規 **Right femoral vein** 放 3–4 個 sheaths（6F/7F）；CS 若股靜脈困難可加 Right IJ 或 Left subclavian。
-3. **導管定位**（Fluoroscopy 或 3D mapping 引導）：HRA、HIS、RV apex、CS（見[第四部分 §1](#1-導管放置位置catheter-placement)）。
-4. **Baseline Intervals**（Sinus rhythm 下）：測 PA / AH / HV（見[第五部分](#五基礎間期baseline-intervals完整定義)）。
+3. **導管定位**（Fluoroscopy 或 3D mapping 引導）：HRA、HIS、RV apex、CS（見[第五章 §1 導管放置位置](#1-導管放置位置catheter-placement)）。
+4. **Baseline Intervals**（Sinus rhythm 下）：測 PA / AH / HV（見[第六章](#六基礎間期baseline-intervals完整定義)）。
 
 ### Phase 3：Diagnostic Stimulation & Induction
 
@@ -397,7 +468,7 @@ flowchart LR
 
 ### Phase 4：Intra-Procedural Differential Diagnosis
 
-頻脈穩定維持後，進入核心鑑別（見[第二部分](#四第二部分ep-study-的實戰鑑別)與[鑑別流程圖](#-鑑別診斷主流程圖)）：
+頻脈穩定維持後，進入核心鑑別（見[第五章](#五鑑別診斷二ep-study-的實戰鑑別)與[鑑別診斷主流程圖](#鑑別診斷主流程圖)）：
 
 1. 測 **TCL** 與 **VA**：VA < 70 → 疑 typical AVNRT；VA ≥ 70 → 納入 AVRT / atypical AVNRT。
 2. 判 **Atrial activation sequence**：Eccentric → 直接 AVRT；Concentric → 續做進階手法。
@@ -440,6 +511,7 @@ flowchart LR
 
 ## 附錄：核心邏輯一句話總結
 
+- **旁道方向**：**順向傳導（Anterograde）** 決定猝死風險與藥物禁忌（Delta wave、WPW + Afib → VF）；**逆向傳導（Retrograde）** 決定會不會發作窄 QRS Orthodromic AVRT，也是消融標測依據。
 - **Surface ECG**：先看 **RP interval**（短 = AVNRT / 長 = AVRT）與逆傳 P 型態（Pseudo-R'/S、Lead I 倒置）。
 - **EP Study**：VA < 70 ms 傾向 AVNRT；**Eccentric activation 直接 = AVRT**。
 - **困難病例的靈魂拷問**：「從 RV 塞訊號進去，要不要多走**冤枉路（盲端）**才到心房？」
